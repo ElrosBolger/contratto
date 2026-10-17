@@ -9,7 +9,7 @@
   <meta name="apple-mobile-web-app-title" content="Contratto">
   <title>Contratto</title>
 
-  <!-- PWA MANIFEST E ICONE UFFICIALI -->
+  <!-- PWA MANIFEST E ICONE -->
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
   <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
@@ -41,7 +41,7 @@
       padding-bottom: 70px;
     }
 
-    /* HEADER & RISTRUTTURAZIONE TITOLO */
+    /* HEADER AUTO-HIDE SU SCROLL */
     header {
       background: linear-gradient(180deg, #020617 0%, #0a1120 100%);
       border-bottom: 2px solid var(--runway-cyan);
@@ -51,6 +51,13 @@
       top: 0;
       z-index: 100;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+      transition: transform 0.3s ease-in-out;
+      will-change: transform;
+    }
+
+    /* CLASSE PER FAR SALIRE E SCOMPARIRE L'HEADER */
+    header.header-hidden {
+      transform: translateY(-100%);
     }
 
     .header-branding {
@@ -186,7 +193,7 @@
     /* QUICK JUMP PILLS */
     .quick-jump-container {
       max-width: 880px;
-      margin: 8px auto 0 auto;
+      margin: 12px auto 0 auto;
       padding: 0 10px;
       display: flex;
       gap: 6px;
@@ -203,7 +210,7 @@
       color: var(--text-muted);
       font-size: 0.72rem;
       font-family: var(--font-mono);
-      padding: 3px 9px;
+      padding: 4px 10px;
       border-radius: 12px;
       text-decoration: none;
       transition: all 0.2s ease;
@@ -769,7 +776,7 @@
 </head>
 <body>
 
-  <header>
+  <header id="mainAppHeader">
     <div class="header-branding">
       <div class="badge-ops">
         <span class="badge-dot"></span>
@@ -1437,11 +1444,48 @@
     </div>
   </div>
 
-  <!-- SCRIPT MOTORE DI RICERCA, TOGGLE, QUICK JUMP, BACK-TO-TOP & SERVICE WORKER -->
+  <!-- SCRIPT DINAMICA SCROLL AUTO-HIDE & OPERAZIONI PWA -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // 1. RICERCA RAPIDA
+      // GESTIONE AUTO-HIDE HEADER SU SCROLL (COMPATIBILE IOS/ANDROID)
+      const header = document.getElementById('mainAppHeader');
       const searchInput = document.getElementById('opsSearchInput');
+      let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
+      let ticking = false;
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Non nascondere se la tastiera è aperta o l'input ha il focus
+            if (document.activeElement === searchInput) {
+              lastScrollY = currentScrollY;
+              ticking = false;
+              return;
+            }
+
+            // Scroll verso il basso oltre i 60px -> nascondi header
+            if (currentScrollY > lastScrollY && currentScrollY > 60) {
+              header.classList.add('header-hidden');
+            } else if (currentScrollY < lastScrollY) {
+              // Scroll verso l'alto -> mostra header
+              header.classList.remove('header-hidden');
+            }
+
+            // Sempre visibile se in cima alla pagina
+            if (currentScrollY <= 10) {
+              header.classList.remove('header-hidden');
+            }
+
+            lastScrollY = currentScrollY <= 0 ? 0 : currentScrollY;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+
+      // 1. RICERCA RAPIDA
       const clearBtn = document.getElementById('clearSearchBtn');
       const resultCountSpan = document.getElementById('searchResultCount');
       const sectionCards = Array.from(document.querySelectorAll('details.section-card'));
@@ -1553,7 +1597,7 @@
           if (targetEl) {
             targetEl.classList.remove('search-hidden');
             targetEl.setAttribute('open', 'true');
-            const headerOffset = 155;
+            const headerOffset = 80;
             const elementPosition = targetEl.getBoundingClientRect().top;
             const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
             window.scrollTo({
@@ -1576,12 +1620,14 @@
 
       backToTopBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
+        header.classList.remove('header-hidden');
       });
 
       // KEYBOARD SHORTCUTS
       window.addEventListener('keydown', (e) => {
         if (e.key === '/' && document.activeElement !== searchInput && document.getElementById('authModalOverlay').style.display !== 'flex') {
           e.preventDefault();
+          header.classList.remove('header-hidden');
           searchInput.focus();
           searchInput.select();
         } else if (e.key === 'Escape') {
@@ -1734,7 +1780,7 @@
       calcPeriodSelect.addEventListener('change', calculateAll);
       calcScattiSelect.addEventListener('change', calculateAll);
 
-      // 6. SERVICE WORKER FISICO (CRITERIO UFFICIALE GOOGLE PWA)
+      // 6. SERVICE WORKER FISICO (CRITERIO UFFICIALE PWA)
       if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         navigator.serviceWorker.register('./sw.js', { scope: './' })
           .catch(err => console.error('SW Error:', err));
