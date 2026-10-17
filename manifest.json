@@ -1,8 +1,8 @@
 {
   "name": "Contratto",
   "short_name": "Contratto",
-  "start_url": "./index.html",
-  "scope": "./",
+  "start_url": "/contratto/",
+  "scope": "/contratto/",
   "display": "standalone",
   "background_color": "#070d17",
   "theme_color": "#020617",
