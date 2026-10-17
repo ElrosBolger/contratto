@@ -9,13 +9,6 @@
   <meta name="apple-mobile-web-app-title" content="Contratto">
   <title>Contratto</title>
 
-  <!-- PWA MANIFEST CON ICONA PNG 512x512 HIGH-RES EMBEDDED -->
-  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22Contratto%22%2C%22short_name%22%3A%22Contratto%22%2C%22start_url%22%3A%22.%22%2C%22scope%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23070d17%22%2C%22theme_color%22%3A%22%23020617%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAQAAAAEAAQMAAABmvDolAAAABlBMVEUADw8AAAD8v%2BRNAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABSUlEQVR4nO3WMW7DMAwFUH4UqVOvUug1OvWSpUuXrlu3DNUWvEAB2w4q730CQXgNfSSK0n47r897q9K7t%2Ft2q%2FX6XGvP9dbrWp7rvfV6ba312h5q79e51uuxvte5fq5Ptbaf66vW%2Bq3%2F1nr91Gq91uvzrNZrrT5r717rqz7Vem2tdbW%2Fau9a66u%2Bq9%2Frrfr1e62vutZ6vfXXe%2B%2B1ftReP%2Bq1Vv9fq16rtfpc67m26q%2Fea%2B2v13pt17rWa32ovXup1%2Fqq11r7r35b7b%2F6ba3f6u9a%2B%2Bt1rtfW6rXWq9b7db6%2F1lr7r7Xf1lp796v2e13rba29a%2B9aa%2B9a%2B6t%2Br3e91t%2F1Xvu7tX7qf6v9VOvv%2Bq61%2Blytv%2Bv1v6%2F1Wv9X67Xeq79%2Ba60%2B%2F%2F5qvV7rq77qtV6rdbXX61zrtb%2FWq7V6bf%2FXWn3We2utr1qt3%2FpXrfVaq%2FVaq7W%2F1v5b7b9qvdZ7tfbXqvderda%2F6re1eq31qm%2F1qf9aq8%2Fa21rrvdZ6vfVaq9fXvX5rrda%2FWmvtXWtf1drf6vd7vdZrbfX3rLX6WqvVeq3Var1qvdZ67a%2FW6rVeq7V%2B61Ot9Vrrtf6b9Vq%2F1Vq%2F1Vq%2FtVq%2F1Vq%2F1Vq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F1Vq%2FtVq%2F9b%2FVfuvfa%2F8D5e4bV2L3NqEAAAAASUVORK5CYII%3D%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image%2Fpng%22%2C%22purpose%22%3A%22any%20maskable%22%7D%5D%7D">
-  
-  <!-- FAVICON & APPLE TOUCH ICON EMBEDDED -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23070d17'/%3E%3Cpath d='M16 3 L28 8 L28 17 C28 24 16 29 16 29 C16 29 4 24 4 17 L4 8 Z' fill='%230f1926' stroke='%2338bdf8' stroke-width='1.5'/%3E%3Cpath d='M16 9 L18 14 L23 15.5 L18.5 17.5 L19 21 L16 19.5 L13 21 L13.5 17.5 L9 15.5 L14 14 Z' fill='%2300ff66'/%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='36' fill='%23070d17'/%3E%3Cpath d='M96 24 L168 56 L168 108 C168 150 96 178 96 178 C96 178 24 150 24 108 L24 56 Z' fill='%230f1926' stroke='%2338bdf8' stroke-width='8'/%3E%3Cpath d='M96 52 L108 82 L138 92 L112 104 L114 126 L96 116 L78 126 L80 104 L54 92 L84 82 Z' fill='%2300ff66'/%3E%3C/svg%3E">
-
   <style>
     :root {
       --radar-bg: #070d17;
@@ -43,6 +36,7 @@
       padding-bottom: 70px;
     }
 
+    /* HEADER PROFESSIONALE E RISTRUTTURATO */
     header {
       background: linear-gradient(180deg, #020617 0%, #0a1120 100%);
       border-bottom: 2px solid var(--runway-cyan);
@@ -1438,7 +1432,97 @@
     </div>
   </div>
 
-  <!-- SCRIPT MOTORE DI RICERCA, TOGGLE, QUICK JUMP, BACK-TO-TOP & SERVICE WORKER PWA -->
+  <!-- GENERATORE ICONA DINAMICA ED ELEVATA A PWA STANDALONE -->
+  <script>
+    (function initPwaAssets() {
+      // 1. Genera l'icona Radar PNG a 512x512 via Canvas
+      const canvas = document.createElement('canvas');
+      canvas.width = 512;
+      canvas.height = 512;
+      const ctx = canvas.getContext('2d');
+
+      // Sfondo dark radar con angoli arrotondati
+      ctx.fillStyle = '#070d17';
+      ctx.beginPath();
+      ctx.roundRect(0, 0, 512, 512, 96);
+      ctx.fill();
+
+      // Scudo Ciano
+      ctx.strokeStyle = '#38bdf8';
+      ctx.lineWidth = 20;
+      ctx.fillStyle = '#0f1926';
+      ctx.beginPath();
+      ctx.moveTo(256, 54);
+      ctx.lineTo(440, 130);
+      ctx.lineTo(440, 270);
+      ctx.bezierCurveTo(440, 380, 256, 458, 256, 458);
+      ctx.bezierCurveTo(256, 458, 72, 380, 72, 270);
+      ctx.lineTo(72, 130);
+      ctx.closePath();
+      ctx.fill();
+      ctx.stroke();
+
+      // Sagoma Aereo Radar Verde Neon
+      ctx.fillStyle = '#00ff66';
+      ctx.shadowColor = '#00ff66';
+      ctx.shadowBlur = 18;
+      ctx.beginPath();
+      ctx.moveTo(256, 140);
+      ctx.lineTo(290, 224);
+      ctx.lineTo(374, 250);
+      ctx.lineTo(298, 284);
+      ctx.lineTo(306, 342);
+      ctx.lineTo(256, 316);
+      ctx.lineTo(206, 342);
+      ctx.lineTo(214, 284);
+      ctx.lineTo(138, 250);
+      ctx.lineTo(222, 224);
+      ctx.closePath();
+      ctx.fill();
+      ctx.shadowBlur = 0;
+
+      const iconPngData = canvas.toDataURL('image/png');
+
+      // 2. Collega Favicon e Apple-Touch-Icon
+      const appleIcon = document.createElement('link');
+      appleIcon.rel = 'apple-touch-icon';
+      appleIcon.href = iconPngData;
+      document.head.appendChild(appleIcon);
+
+      const favIcon = document.createElement('link');
+      favIcon.rel = 'icon';
+      favIcon.type = 'image/png';
+      favIcon.href = iconPngData;
+      document.head.appendChild(favIcon);
+
+      // 3. Inietta il Manifest Dinamico con Icona PNG Reale
+      const pwaManifest = {
+        name: "Contratto",
+        short_name: "Contratto",
+        start_url: window.location.href,
+        scope: "./",
+        display: "standalone",
+        background_color: "#070d17",
+        theme_color: "#020617",
+        icons: [
+          {
+            src: iconPngData,
+            sizes: "512x512",
+            type: "image/png",
+            purpose: "any maskable"
+          }
+        ]
+      };
+      const manifestStr = JSON.stringify(pwaManifest);
+      const manifestBlob = new Blob([manifestStr], { type: 'application/manifest+json' });
+      const manifestLink = document.createElement('link');
+      manifestLink.rel = 'manifest';
+      manifestLink.href = URL.createObjectURL(manifestBlob);
+      document.head.appendChild(manifestLink);
+    })();
+  </script>
+
+  <!-- SCRIPT MOTORE DI RICERCA, TOGGLE, QUICK JUMP, BACK-TO-TOP & AUTH -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // 1. RICERCA RAPIDA
@@ -1735,7 +1819,7 @@
       calcPeriodSelect.addEventListener('change', calculateAll);
       calcScattiSelect.addEventListener('change', calculateAll);
 
-      // 6. REGISTRAZIONE SERVICE WORKER CON FETCH HANDLER (CRITERIO PWA)
+      // 6. SERVICE WORKER PWA STANDALONE
       if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         const swScript = `
           self.addEventListener('install', e => self.skipWaiting());
