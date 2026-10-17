@@ -9,6 +9,11 @@
   <meta name="apple-mobile-web-app-title" content="Contratto">
   <title>Contratto</title>
 
+  <!-- PWA MANIFEST E ICONE UFFICIALI -->
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png">
+
   <style>
     :root {
       --radar-bg: #070d17;
@@ -36,7 +41,7 @@
       padding-bottom: 70px;
     }
 
-    /* HEADER PROFESSIONALE E RISTRUTTURATO */
+    /* HEADER & RISTRUTTURAZIONE TITOLO */
     header {
       background: linear-gradient(180deg, #020617 0%, #0a1120 100%);
       border-bottom: 2px solid var(--runway-cyan);
@@ -820,33 +825,33 @@
       <div class="panel-body">
         <h3>Orario Effettivo e Media Annuale</h3>
         <ul>
-          <li><strong>Orario Normale Retribuito</strong>: fissato in <strong>38 ore e 30 minuti settimanali</strong>, su 5 o 6 giorni lavorativi[cite: 1, 2].</li>
-          <li><strong>Pausa Giornaliera Non Turnisti</strong>: nei turni a orario spezzato non avvicendato, l'intervallo tra i due periodi è <strong>non superiore a 1 ora</strong>[cite: 2].</li>
-          <li><strong>Flessibilità Multiriparto (12 Mesi)</strong>: l'azienda può modulare l'orario settimanale in funzione dei picchi stagionali di traffico passeggeri o merci[cite: 1, 2]. La media massima settimanale nell'arco di 12 mesi, inclusi tutti gli straordinari, non può superare il tetto legale delle <strong>48 ore</strong>[cite: 1, 2].</li>
-          <li><strong>Saldo Ore Flessibilità (Art. G8 p. II)</strong>: le ore aggiuntive svolte nei picchi vanno recuperate con corrispondenti riduzioni nei periodi di minore intensità[cite: 2]. Il mancato godimento entro l'anno dà diritto alla <strong>liquidazione delle ore residue nel mese successivo</strong> con le maggiorazioni dello straordinario diurno (+25% feriale, +30% nel feriale non lavorativo)[cite: 2].</li>
+          <li><strong>Orario Normale Retribuito</strong>: fissato in <strong>38 ore e 30 minuti settimanali</strong>, su 5 o 6 giorni lavorativi.</li>
+          <li><strong>Pausa Giornaliera Non Turnisti</strong>: nei turni a orario spezzato non avvicendato, l'intervallo tra i due periodi è <strong>non superiore a 1 ora</strong>.</li>
+          <li><strong>Flessibilità Multiriparto (12 Mesi)</strong>: l'azienda può modulare l'orario settimanale in funzione dei picchi stagionali di traffico passeggeri o merci. La media massima settimanale nell'arco di 12 mesi, inclusi tutti gli straordinari, non può superare il tetto legale delle <strong>48 ore</strong>.</li>
+          <li><strong>Saldo Ore Flessibilità (Art. G8 p. II)</strong>: le ore aggiuntive svolte nei picchi vanno recuperate con corrispondenti riduzioni nei periodi di minore intensità. Il mancato godimento entro l'anno dà diritto alla <strong>liquidazione delle ore residue nel mese successivo</strong> con le maggiorazioni dello straordinario diurno (+25% feriale, +30% nel feriale non lavorativo).</li>
         </ul>
 
         <div class="notice-amber">
           <strong>NOTA OPERATIVA SULLA PAUSA (41 ORE E MEZZA LORDE):</strong><br>
-          L'art. G8 c. 8 dispone che nei turni ad orario continuato sia prevista un'<strong>interruzione di 30 minuti per la refezione</strong>[cite: 1, 2]. Trattandosi per legge e contratto di pausa pasto non lavorata e non timbrata, <strong>non è considerata orario effettivo e non è retribuita</strong>[cite: 1]. Su una turnazione articolata su 6 giorni (30 min × 6 presenze = 3 ore non pagate), la presenza fisica complessiva richiesta in sedime aeroportuale ammonta esattamente a <strong>41 ore e 30 minuti</strong> a fronte di <strong>38 ore e 30 minuti di lavoro effettivo retribuito</strong>[cite: 1].
+          L'art. G8 c. 8 dispone che nei turni ad orario continuato sia prevista un'<strong>interruzione di 30 minuti per la refezione</strong>. Trattandosi per legge e contratto di pausa pasto non lavorata e non timbrata, <strong>non è considerata orario effettivo e non è retribuita</strong>. Su una turnazione articolata su 6 giorni (30 min × 6 presenze = 3 ore non pagate), la presenza fisica complessiva richiesta in sedime aeroportuale ammonta esattamente a <strong>41 ore e 30 minuti</strong> a fronte di <strong>38 ore e 30 minuti di lavoro effettivo retribuito</strong>.
         </div>
 
         <h3>Pause, Spezzati e Deroghe Operative</h3>
         <ul>
-          <li><strong>Turni Spezzati (Interruzione)</strong>: l'intervallo tra i due tronconi non può essere inferiore a <strong>2 ore e mezza</strong> né superiore a <strong>6 ore</strong> (minimo riducibile a 2 ore negli scali con traffico annuo inferiore a 2 milioni di passeggeri)[cite: 1, 2].</li>
-          <li><strong>Divieto Frazionamento Lavoro Notturno (Art. G8 c. 9)</strong>: il lavoro notturno, sia esso svolto a turni periodici che in via straordinaria, <strong>non può in alcun caso essere ripartito o spezzato</strong>[cite: 2].</li>
-          <li><strong>Deroghe Turnisti D.Lgs. 66/2003 (Art. G8 c. 11)</strong>: per salvaguardare la continuità del servizio essenziale h24, si deroga alle norme di legge su riposi giornalieri e pause[cite: 1, 2]. Se in una settimana entrambi i giorni liberi cadono fuori dalla domenica, il secondo vale a tutti gli effetti come <strong>riposo compensativo festivo</strong>[cite: 1, 2].</li>
+          <li><strong>Turni Spezzati (Interruzione)</strong>: l'intervallo tra i due tronconi non può essere inferiore a <strong>2 ore e mezza</strong> né superiore a <strong>6 ore</strong> (minimo riducibile a 2 ore negli scali con traffico annuo inferiore a 2 milioni di passeggeri).</li>
+          <li><strong>Divieto Frazionamento Lavoro Notturno (Art. G8 c. 9)</strong>: il lavoro notturno, sia esso svolto a turni periodici che in via straordinaria, <strong>non può in alcun caso essere ripartito o spezzato</strong>.</li>
+          <li><strong>Deroghe Turnisti D.Lgs. 66/2003 (Art. G8 c. 11)</strong>: per salvaguardare la continuità del servizio essenziale h24, si deroga alle norme di legge su riposi giornalieri e pause. Se in una settimana entrambi i giorni liberi cadono fuori dalla domenica, il secondo vale a tutti gli effetti come <strong>riposo compensativo festivo</strong>.</li>
         </ul>
 
         <h3>Reperibilità e Richiamo Straordinario</h3>
         <ul>
-          <li><strong>Reperibilità (Art. G9)</strong>: preavviso minimo di <strong>48 ore</strong> per l'inserimento nella turnazione (obbligatorio salvo giustificato motivo)[cite: 1, 2]. Importi e indennità demandati alla contrattazione aziendale[cite: 2].</li>
-          <li><strong>Richiamo Improvviso in Servizio (Art. G15 c. 9)</strong>: al dipendente richiamato dopo aver lasciato l'aeroporto al termine dell'orario normale spetta il pagamento di un <strong>minimo contrattuale garantito di 4 ore di straordinario</strong>, anche se la prestazione dura solo pochi minuti[cite: 1, 2].</li>
+          <li><strong>Reperibilità (Art. G9)</strong>: preavviso minimo di <strong>48 ore</strong> per l'inserimento nella turnazione (obbligatorio salvo giustificato motivo). Importi e indennità demandati alla contrattazione aziendale.</li>
+          <li><strong>Richiamo Improvviso in Servizio (Art. G15 c. 9)</strong>: al dipendente richiamato dopo aver lasciato l'aeroporto al termine dell'orario normale spetta il pagamento di un <strong>minimo contrattuale garantito di 4 ore di straordinario</strong>, anche se la prestazione dura solo pochi minuti.</li>
         </ul>
 
         <h3>Smart Working / Lavoro Agile (Art. G16 Bis)</h3>
         <ul>
-          <li>Regolato da accordi individuali e regolamenti di scalo, con obbligo inderogabile di definire le misure tecniche e organizzative a garanzia del <strong>diritto alla disconnessione</strong>[cite: 1, 2].</li>
+          <li>Regolato da accordi individuali e regolamenti di scalo, con obbligo inderogabile di definire le misure tecniche e organizzative a garanzia del <strong>diritto alla disconnessione</strong>.</li>
         </ul>
       </div>
     </details>
@@ -862,15 +867,15 @@
       </summary>
       <div class="panel-body">
         <h3>Composizione della Busta Paga</h3>
-        <p>Retribuzione di Fatto = <strong>Minimo Tabellare</strong> + <strong>Indennità di Contingenza</strong> + <strong>EDR / EDRN</strong> + eventuali <strong>Scatti di Anzianità</strong> e superminimi[cite: 1].</p>
+        <p>Retribuzione di Fatto = <strong>Minimo Tabellare</strong> + <strong>Indennità di Contingenza</strong> + <strong>EDR / EDRN</strong> + eventuali <strong>Scatti di Anzianità</strong> e superminimi.</p>
 
         <div class="notice-cyan">
           <strong>UNA TANTUM ECONOMICA (Art. G20 c. 2-3)</strong><br>
-          Erogato nel mese di <strong>luglio 2025</strong> a tutti i lavoratori a tempo indeterminato in forza al 1° luglio 2025 con attività nel periodo 01/01/2025 – 30/06/2025 un importo forfettario omnicomprensivo di <strong>500 € lordi</strong> (riproporzionato pro-quota per assunzioni nel semestre con frazioni &ge; 15 giorni e per il part-time)[cite: 2]. Escluso da ogni riflesso contrattuale, indiretto e TFR[cite: 2].
+          Erogato nel mese di <strong>luglio 2025</strong> a tutti i lavoratori a tempo indeterminato in forza al 1° luglio 2025 con attività nel periodo 01/01/2025 – 30/06/2025 un importo forfettario omnicomprensivo di <strong>500 € lordi</strong> (riproporzionato pro-quota per assunzioni nel semestre con frazioni &ge; 15 giorni e per il part-time). Escluso da ogni riflesso contrattuale, indiretto e TFR.
         </div>
 
         <h3>Tabella Minimi Contrattuali CCNL 2025-2027 (Art. G20)</h3>
-        <p>Incremento a regime di <strong>+210 € lordi al Livello 4</strong> scaglionato in 3 tranche (1° luglio 2025: +100€; 1° luglio 2026: +60€; 1° luglio 2027: +50€)[cite: 1, 2]:</p>
+        <p>Incremento a regime di <strong>+210 € lordi al Livello 4</strong> scaglionato in 3 tranche (1° luglio 2025: +100€; 1° luglio 2026: +60€; 1° luglio 2027: +50€):</p>
         <div class="table-responsive">
           <table>
             <thead>
@@ -903,27 +908,27 @@
 
         <h3>Disciplina EDR ed EDRN (Art. G22)</h3>
         <ul>
-          <li><strong>EDR Tabellare</strong>: erogato per 12 mensilità a tempo indeterminato e apprendisti (utile unicamente ai fini del TFR, escluso da tutti gli altri istituti)[cite: 2].</li>
-          <li><strong>EDRN (Art. G22 c. 3)</strong>: per il personale escluso dall'erogazione dell'EDR contrattuale spetta la voce <strong>EDRN fissa di 8,00 € lordi mensili</strong> per 12 mensilità (utile solo ai fini TFR, riproporzionata per il part-time)[cite: 2].</li>
+          <li><strong>EDR Tabellare</strong>: erogato per 12 mensilità a tempo indeterminato e apprendisti (utile unicamente ai fini del TFR, escluso da tutti gli altri istituti).</li>
+          <li><strong>EDRN (Art. G22 c. 3)</strong>: per il personale escluso dall'erogazione dell'EDR contrattuale spetta la voce <strong>EDRN fissa di 8,00 € lordi mensili</strong> per 12 mensilità (utile solo ai fini TFR, riproporzionata per il part-time).</li>
         </ul>
 
         <h3>Scatti di Anzianità (Art. G23)</h3>
         <ul>
-          <li>Maturano ogni <strong>2 anni (biennio)</strong> di effettivo servizio in azienda[cite: 1, 2].</li>
-          <li><strong>Tetto massimo</strong>: <strong>8 scatti biennali</strong> (l'8° scatto matura al 16° anno dal 1° gennaio 2026 per assunti dal 01/01/1993)[cite: 1, 2].</li>
-          <li><strong>Non assorbibilità</strong>: gli scatti non possono essere assorbiti da aumenti di merito, né i meriti dagli scatti[cite: 2].</li>
-          <li><strong>Valori mensili scatto</strong>: Liv 1S: 37,29 € | Liv 1: 34,45 € | Liv 2A: 32,18 € | Liv 2B: 30,47 € | Liv 3: 29,33 € | <strong>Liv 4: 27,42 €</strong> | <strong>Liv 5: 26,65 €</strong> | <strong>Liv 6: 25,31 €</strong> | Liv 7: 24,22 € | Liv 8: 22,67 €[cite: 1, 2].</li>
-          <li><strong>Rivalutazione e tetti</strong>: l'importo degli scatti verrà rivalutato sulle variazioni dei minimi tabellari successive alla scadenza contrattuale[cite: 2]. Tetto massimo: 73% del tabellare + contingenza al 1980 (88,83 €)[cite: 1, 2].</li>
-          <li><strong>Passaggio di livello</strong>: si conserva in cifra fissa il maturato; il riallineamento alle tariffe del nuovo livello avviene al compimento del biennio successivo[cite: 2].</li>
+          <li>Maturano ogni <strong>2 anni (biennio)</strong> di effettivo servizio in azienda.</li>
+          <li><strong>Tetto massimo</strong>: <strong>8 scatti biennali</strong> (l'8° scatto matura al 16° anno dal 1° gennaio 2026 per assunti dal 01/01/1993).</li>
+          <li><strong>Non assorbibilità</strong>: gli scatti non possono essere assorbiti da aumenti di merito, né i meriti dagli scatti.</li>
+          <li><strong>Valori mensili scatto</strong>: Liv 1S: 37,29 € | Liv 1: 34,45 € | Liv 2A: 32,18 € | Liv 2B: 30,47 € | Liv 3: 29,33 € | <strong>Liv 4: 27,42 €</strong> | <strong>Liv 5: 26,65 €</strong> | <strong>Liv 6: 25,31 €</strong> | Liv 7: 24,22 € | Liv 8: 22,67 €.</li>
+          <li><strong>Rivalutazione e tetti</strong>: l'importo degli scatti verrà rivalutato sulle variazioni dei minimi tabellari successive alla scadenza contrattuale. Tetto massimo: 73% del tabellare + contingenza al 1980 (88,83 €).</li>
+          <li><strong>Passaggio di livello</strong>: si conserva in cifra fissa il maturato; il riallineamento alle tariffe del nuovo livello avviene al compimento del biennio successivo.</li>
         </ul>
 
         <h3>Divisori Contrattuali e Mensilità Aggiuntive</h3>
         <ul>
-          <li><strong>Paga Giornaliera</strong>: Retribuzione mensile / <strong>26</strong>[cite: 1, 2].</li>
-          <li><strong>Paga Oraria</strong>: Retribuzione mensile / <strong>173</strong>[cite: 1, 2].</li>
-          <li><strong>Tredicesima (Art. G29)</strong>: erogata entro il <strong>20 dicembre</strong> (pari alla paga di fatto di dicembre)[cite: 1, 2].</li>
-          <li><strong>Quattordicesima (Art. G30)</strong>: corrisposta con la busta paga di <strong>giugno</strong> (periodo di maturazione 1° luglio – 30 giugno)[cite: 1, 2].</li>
-          <li>Frazioni di mese &ge; 15 giorni valgono mese intero per 13ª e 14ª[cite: 1, 2].</li>
+          <li><strong>Paga Giornaliera</strong>: Retribuzione mensile / <strong>26</strong>.</li>
+          <li><strong>Paga Oraria</strong>: Retribuzione mensile / <strong>173</strong>.</li>
+          <li><strong>Tredicesima (Art. G29)</strong>: erogata entro il <strong>20 dicembre</strong> (pari alla paga di fatto di dicembre).</li>
+          <li><strong>Quattordicesima (Art. G30)</strong>: corrisposta con la busta paga di <strong>giugno</strong> (periodo di maturazione 1° luglio – 30 giugno).</li>
+          <li>Frazioni di mese &ge; 15 giorni valgono mese intero per 13ª e 14ª.</li>
         </ul>
       </div>
     </details>
@@ -942,24 +947,24 @@
         <ul>
           <li><strong>Indennità Giornaliera di Presenza (Art. G24)</strong>:
             <ul>
-              <li>Personale su turni avvicendati h16/h24: <strong>5,73 € al giorno</strong> (2,73 € base + 3,00 € aumento da luglio 2025)[cite: 1, 2].</li>
-              <li>Personale non turnista (giornaliero fisso): <strong>6,97 € al giorno</strong> (3,97 € base + 3,00 € aumento da luglio 2025)[cite: 1, 2].</li>
-              <li><strong>Incidenza Ferie</strong>: dal 1° luglio 2025 concorre a comporre la paga dei giorni di ferie[cite: 1, 2]. Non rileva per il TFR ed assorbe l'EDR storico di 6,19 €[cite: 1, 2].</li>
+              <li>Personale su turni avvicendati h16/h24: <strong>5,73 € al giorno</strong> (2,73 € base + 3,00 € aumento da luglio 2025).</li>
+              <li>Personale non turnista (giornaliero fisso): <strong>6,97 € al giorno</strong> (3,97 € base + 3,00 € aumento da luglio 2025).</li>
+              <li><strong>Incidenza Ferie</strong>: dal 1° luglio 2025 concorre a comporre la paga dei giorni di ferie. Non rileva per il TFR ed assorbe l'EDR storico di 6,19 €.</li>
             </ul>
           </li>
-          <li><strong>Indennità di Turno (Art. G25)</strong>: <strong>0,26 €</strong> per ogni presenza su turni h16/h24 con orari sfalsati nelle 24h (assorbita per SEA e Ronchi dei Legionari)[cite: 1, 2].</li>
+          <li><strong>Indennità di Turno (Art. G25)</strong>: <strong>0,26 €</strong> per ogni presenza su turni h16/h24 con orari sfalsati nelle 24h (assorbita per SEA e Ronchi dei Legionari).</li>
           <li><strong>Indennità di Campo (Art. G26)</strong>: riconosciuta a chi lavora nel sedime:
             <ul>
-              <li>Scalo entro 20 km dal centro città: <strong>0,21 €</strong> a presenza[cite: 1, 2].</li>
-              <li>Scalo oltre 20 km dal centro città: <strong>0,26 €</strong> a presenza[cite: 1, 2].</li>
+              <li>Scalo entro 20 km dal centro città: <strong>0,21 €</strong> a presenza.</li>
+              <li>Scalo oltre 20 km dal centro città: <strong>0,26 €</strong> a presenza.</li>
             </ul>
           </li>
-          <li><strong>Lavaggio DPI / Divisa (Art. G37 Ter)</strong>: <strong>10,00 € lordi al mese</strong> (da luglio 2025) erogati se l'azienda non gestisce direttamente la lavanderia (nessuna incidenza su indiretti e TFR)[cite: 1, 2].</li>
-          <li><strong>Maneggio Denaro (Art. G27)</strong>: <strong>10%</strong> di minimo tabellare + contingenza se la mansione normale e prevalente comporta cassa o transazioni elettroniche con responsabilità contabile per errori (non frazionabile a giorno)[cite: 1, 2].</li>
+          <li><strong>Lavaggio DPI / Divisa (Art. G37 Ter)</strong>: <strong>10,00 € lordi al mese</strong> (da luglio 2025) erogati se l'azienda non gestisce direttamente la lavanderia (nessuna incidenza su indiretti e TFR).</li>
+          <li><strong>Maneggio Denaro (Art. G27)</strong>: <strong>10%</strong> di minimo tabellare + contingenza se la mansione normale e prevalente comporta cassa o transazioni elettroniche con responsabilità contabile per errori (non frazionabile a giorno).</li>
         </ul>
 
         <h3>Tabella Maggiorazioni Straordinario, Notte e Festivi (Art. G15)</h3>
-        <p>Calcolate sulla paga oraria base (diviso 173), omnicomprensive di TFR e ratei[cite: 1, 2]. <strong>Non cumulabili</strong> (la maggiore assorbe la minore)[cite: 1, 2]:</p>
+        <p>Calcolate sulla paga oraria base (diviso 173), omnicomprensive di TFR e ratei. <strong>Non cumulabili</strong> (la maggiore assorbe la minore):</p>
         <div class="table-responsive">
           <table>
             <thead>
@@ -980,7 +985,7 @@
           </table>
         </div>
         <div class="notice-cyan">
-          <strong>FASCIA NOTTURNA ECONOMICA</strong>: Ai soli fini del calcolo delle percentuali in busta paga, il lavoro notturno comprende tutte le ore svolte tra le <strong>ore 20:00 e le ore 08:00</strong>[cite: 1, 2].
+          <strong>FASCIA NOTTURNA ECONOMICA</strong>: Ai soli fini del calcolo delle percentuali in busta paga, il lavoro notturno comprende tutte le ore svolte tra le <strong>ore 20:00 e le ore 08:00</strong>.
         </div>
       </div>
     </details>
@@ -996,28 +1001,28 @@
       </summary>
       <div class="panel-body">
         <h3>Ferie Spettanti Annuali (Art. G18)</h3>
-        <p>Maturano per anno solare in base all'anzianità aziendale (su orario a 5 giorni, coeff. 1)[cite: 1, 2]:</p>
+        <p>Maturano per anno solare in base all'anzianità aziendale (su orario a 5 giorni, coeff. 1):</p>
         <ul>
-          <li><strong>Fino a 1 anno di anzianità</strong>: 20 giorni lavorativi[cite: 1, 2].</li>
-          <li><strong>Da oltre 1 anno a 2 anni</strong>: 21 giorni lavorativi[cite: 1, 2].</li>
-          <li><strong>Da oltre 2 anni a 10 anni</strong>: 22 giorni lavorativi[cite: 1, 2].</li>
-          <li><strong>Oltre 10 anni di anzianità</strong>: 23 giorni lavorativi[cite: 1, 2].</li>
+          <li><strong>Fino a 1 anno di anzianità</strong>: 20 giorni lavorativi.</li>
+          <li><strong>Da oltre 1 anno a 2 anni</strong>: 21 giorni lavorativi.</li>
+          <li><strong>Da oltre 2 anni a 10 anni</strong>: 22 giorni lavorativi.</li>
+          <li><strong>Oltre 10 anni di anzianità</strong>: 23 giorni lavorativi.</li>
         </ul>
         <p>
-          • <strong>Orario su 6 giorni</strong>: i giorni spettanti si moltiplicano per <strong>1,2</strong>[cite: 1, 2].<br>
-          • <strong>Regola dei ratei</strong>: per l'anno di assunzione o cessazione le frazioni &ge; 15 giorni valgono 1 mese intero; trascurate le frazioni inferiori a 15 giorni[cite: 2].<br>
-          • <strong>Recupero arretrati</strong>: le ferie non godute possono essere recuperate nei <strong>36 mesi successivi</strong> all'anno di maturazione[cite: 1, 2].<br>
-          • <strong>Interruzione per malattia</strong>: la malattia certificata e comunicata tempestivamente <strong>interrompe il decorso delle ferie</strong>[cite: 1, 2].<br>
-          • <strong>Richiamo in servizio</strong>: rimborso documentato delle spese di rientro in sede ed eventuale ritorno al luogo di vacanza[cite: 2].
+          • <strong>Orario su 6 giorni</strong>: i giorni spettanti si moltiplicano per <strong>1,2</strong>.<br>
+          • <strong>Regola dei ratei</strong>: per l'anno di assunzione o cessazione le frazioni &ge; 15 giorni valgono 1 mese intero; trascurate le frazioni inferiori a 15 giorni.<br>
+          • <strong>Recupero arretrati</strong>: le ferie non godute possono essere recuperate nei <strong>36 mesi successivi</strong> all'anno di maturazione.<br>
+          • <strong>Interruzione per malattia</strong>: la malattia certificata e comunicata tempestivamente <strong>interrompe il decorso delle ferie</strong>.<br>
+          • <strong>Richiamo in servizio</strong>: rimborso documentato delle spese di rientro in sede ed eventuale ritorno al luogo di vacanza.
         </p>
 
         <h3>Trattamento Festività e R.O.L. (Art. G17)</h3>
         <ul>
-          <li><strong>Festivo lavorato</strong>: retribuito con quota oraria normale maggiorata del <strong>+45%</strong> per le ore effettivamente svolte[cite: 1, 2].</li>
-          <li><strong>Festivo coincidente con riposo/domenica</strong>: spetta <strong>1 giornata retribuita in più</strong> in busta paga (un ventiseiesimo della paga di fatto)[cite: 1, 2].</li>
-          <li><strong>Santo Patrono</strong>: a livello nazionale fissato il <strong>29 giugno</strong> (SS. Pietro e Paolo) in sostituzione della Madonna di Loreto (10 dicembre), salve diverse intese locali[cite: 1, 2].</li>
-          <li><strong>Monte R.O.L.</strong>: <strong>4 giornate annue</strong> (anche fruibili a ore)[cite: 1, 2]. Vanno consumate entro <strong>marzo dell'anno successivo</strong>: in caso contrario l'azienda ha l'obbligo di <strong>liquidarle per intero in denaro</strong> con la normale busta paga[cite: 1, 2].</li>
-          <li><strong>Banca Ore Solidale (Art. G18 Bis)</strong>: possibilità di cedere ferie e ROL a colleghi per assistere figli con patologie gravi o percorsi di protezione contro la violenza di genere[cite: 1, 2].</li>
+          <li><strong>Festivo lavorato</strong>: retribuito con quota oraria normale maggiorata del <strong>+45%</strong> per le ore effettivamente svolte.</li>
+          <li><strong>Festivo coincidente con riposo/domenica</strong>: spetta <strong>1 giornata retribuita in più</strong> in busta paga (un ventiseiesimo della paga di fatto).</li>
+          <li><strong>Santo Patrono</strong>: a livello nazionale fissato il <strong>29 giugno</strong> (SS. Pietro e Paolo) in sostituzione della Madonna di Loreto (10 dicembre), salve diverse intese locali.</li>
+          <li><strong>Monte R.O.L.</strong>: <strong>4 giornate annue</strong> (anche fruibili a ore). Vanno consumate entro <strong>marzo dell'anno successivo</strong>: in caso contrario l'azienda ha l'obbligo di <strong>liquidarle per intero in denaro</strong> con la normale busta paga.</li>
+          <li><strong>Banca Ore Solidale (Art. G18 Bis)</strong>: possibilità di cedere ferie e ROL a colleghi per assistere figli con patologie gravi o percorsi di protezione contro la violenza di genere.</li>
         </ul>
       </div>
     </details>
@@ -1036,38 +1041,38 @@
 
         <div class="notice-cyan">
           <strong>Guardia Particolare Giurata (GPG) / Addetto Vigilanza e Sicurezza</strong><br>
-          • <strong>Inquadramento tabellare Art. G6 (Nota 9)</strong>: Inquadramento a regime al <strong>Livello 5</strong>[cite: 1, 2]. Ingresso al <strong>Livello 6</strong> &rarr; passaggio automatico al <strong>Livello 5 dopo 18 mesi</strong> di effettivo servizio[cite: 1, 2].<br>
-          • <em>Nota All. 2 (Progetto Formativo Apprendistato)</em>: Il piano specialistico per GPG è previsto con percorso <strong>dal Livello 6 al Livello 4</strong> (36 mesi)[cite: 2].
+          • <strong>Inquadramento tabellare Art. G6 (Nota 9)</strong>: Inquadramento a regime al <strong>Livello 5</strong>. Ingresso al <strong>Livello 6</strong> &rarr; passaggio automatico al <strong>Livello 5 dopo 18 mesi</strong> di effettivo servizio.<br>
+          • <em>Nota All. 2 (Progetto Formativo Apprendistato)</em>: Il piano specialistico per GPG è previsto con percorso <strong>dal Livello 6 al Livello 4</strong> (36 mesi).
         </div>
 
         <div class="notice-cyan">
           <strong>Operatore Unico Aeroportuale (OUA) / Merci e Bagagli</strong><br>
-          Inquadramento a regime: <strong>Livello 6</strong> (Nota 17)[cite: 1, 2].<br>
-          • Ingresso al <strong>Livello 8</strong>[cite: 1, 2].<br>
-          • Passaggio al <strong>Livello 7 dopo 18 mesi</strong>[cite: 1, 2].<br>
-          • Passaggio definitivo al <strong>Livello 6 dopo ulteriori 30 mesi</strong>[cite: 1, 2].
+          Inquadramento a regime: <strong>Livello 6</strong> (Nota 17).<br>
+          • Ingresso al <strong>Livello 8</strong>.<br>
+          • Passaggio al <strong>Livello 7 dopo 18 mesi</strong>.<br>
+          • Passaggio definitivo al <strong>Livello 6 dopo ulteriori 30 mesi</strong>.
         </div>
 
         <div class="notice-cyan">
           <strong>Addetto di Scalo (Check-in, Gate, Rampa, Lost & Found)</strong><br>
-          Inquadramento a regime: <strong>Livello 4</strong> (Nota 8)[cite: 1, 2].<br>
-          • Ingresso al <strong>Livello 6</strong> &rarr; al <strong>Livello 5 dopo 18 mesi</strong> &rarr; al <strong>Livello 4 dopo 24 mesi</strong>[cite: 1, 2].<br>
-          • Passaggio al Livello 3: previo esame di idoneità, 36 mesi di permanenza al Liv. 4, diploma di scuola media superiore, lingue straniere ed effettivo impiego polivalente su più posizioni di scalo[cite: 1, 2].
+          Inquadramento a regime: <strong>Livello 4</strong> (Nota 8).<br>
+          • Ingresso al <strong>Livello 6</strong> &rarr; al <strong>Livello 5 dopo 18 mesi</strong> &rarr; al <strong>Livello 4 dopo 24 mesi</strong>.<br>
+          • Passaggio al Livello 3: previo esame di idoneità, 36 mesi di permanenza al Liv. 4, diploma di scuola media superiore, lingue straniere ed effettivo impiego polivalente su più posizioni di scalo.
         </div>
 
         <div class="notice-amber">
           <strong>ACCORDO SISTEMA PROFESSIONALE (Allegato 1):</strong><br>
-          Con l'entrata in vigore della revisione delle qualifiche e dei nuovi job title (prevista dall'1/1/2026 ad opera della Commissione paritetica), è sancita ufficialmente la <strong>riduzione del 50% di tutti i tempi di attestazione sopra indicati</strong>[cite: 1, 2]!
+          Con l'entrata in vigore della revisione delle qualifiche e dei nuovi job title (prevista dall'1/1/2026 ad opera della Commissione paritetica), è sancita ufficialmente la <strong>riduzione del 50% di tutti i tempi di attestazione sopra indicati</strong>!
         </div>
 
         <h3>Regole Operative sui Passaggi di Livello</h3>
         <ul>
-          <li><strong>Riproportionamento Part-Time (Art. G6 c. 5)</strong>: per il personale a tempo parziale, tutti i tempi di attestazione sono riproporzionati in base all'effettivo orario di lavoro[cite: 2].</li>
-          <li><strong>Proroga Eccezionale (Art. G6 c. 9a)</strong>: in casi assolutamente eccezionali il periodo di attestazione può essere prorogato per non oltre <strong>3 mesi</strong>[cite: 2].</li>
-          <li><strong>Cumulo Mansioni Multiple</strong>: per mansioni diverse svolte successivamente che danno accesso al livello superiore, il tempo totale è pari alla <strong>media dei tempi di permanenza</strong> previsti per ciascuna mansione[cite: 2].</li>
-          <li><strong>Mansioni Superiori (Art. G6 c. 10)</strong>: svolte con continuità per <strong>6 mesi</strong> attribuiscono definitivamente il passaggio al livello superiore (con differenziale economico immediato)[cite: 1, 2]. <em>Eccezione</em>: il passaggio automatico non spetta se le mansioni superiori sono svolte per sostituire un dipendente assente con diritto alla conservazione del posto[cite: 2].</li>
-          <li><strong>Precedenza Operai Diplomati (Art. G6 c. 12)</strong>: gli operai con diploma che ne facciano richiesta scritta hanno <strong>precedenza assoluta</strong> nelle assunzioni impiegatizie rispetto a candidati esterni[cite: 1, 2].</li>
-          <li><strong>Categoria Quadri (Art. G7)</strong>: Livelli 1S e 1 esclusi da vincoli di orario, passaggio alla qualifica dopo 6 mesi consecutivi, copertura legale integrale per atti di servizio e diritto di pubblicazione nominativa di ricerche/brevetti[cite: 1, 2].</li>
+          <li><strong>Riproportionamento Part-Time (Art. G6 c. 5)</strong>: per il personale a tempo parziale, tutti i tempi di attestazione sono riproporzionati in base all'effettivo orario di lavoro.</li>
+          <li><strong>Proroga Eccezionale (Art. G6 c. 9a)</strong>: in casi assolutamente eccezionali il periodo di attestazione può essere prorogato per non oltre <strong>3 mesi</strong>.</li>
+          <li><strong>Cumulo Mansioni Multiple</strong>: per mansioni diverse svolte successivamente che danno accesso al livello superiore, il tempo totale è pari alla <strong>media dei tempi di permanenza</strong> previsti per ciascuna mansione.</li>
+          <li><strong>Mansioni Superiori (Art. G6 c. 10)</strong>: svolte con continuità per <strong>6 mesi</strong> attribuiscono definitivamente il passaggio al livello superiore (con differenziale economico immediato). <em>Eccezione</em>: il passaggio automatico non spetta se le mansioni superiori sono svolte per sostituire un dipendente assente con diritto alla conservazione del posto.</li>
+          <li><strong>Precedenza Operai Diplomati (Art. G6 c. 12)</strong>: gli operai con diploma che ne facciano richiesta scritta hanno <strong>precedenza assoluta</strong> nelle assunzioni impiegatizie rispetto a candidati esterni.</li>
+          <li><strong>Categoria Quadri (Art. G7)</strong>: Livelli 1S e 1 esclusi da vincoli di orario, passaggio alla qualifica dopo 6 mesi consecutivi, copertura legale integrale per atti di servizio e diritto di pubblicazione nominativa di ricerche/brevetti.</li>
         </ul>
       </div>
     </details>
@@ -1084,34 +1089,34 @@
       <div class="panel-body">
         <h3>Obblighi di Comunicazione e Fasce INPS</h3>
         <ul>
-          <li><strong>Comunicazione</strong>: immediata e <strong>prima dell'inizio del turno</strong> del primo giorno di assenza (anche per eventuale prosecuzione)[cite: 1, 2]. Comunicare subito il numero PUC del certificato telematico (entro 2 giorni il cartaceo se eccezionalmente rilasciato dal medico)[cite: 1, 2]. Inosservanza = assenza ingiustificata[cite: 2].</li>
-          <li><strong>Variazione Domicilio</strong>: obbligo di comunicare tempestivamente all'azienda qualsiasi cambio di indirizzo durante la malattia[cite: 2].</li>
-          <li><strong>Fasce Reperibilità Visite Fiscali</strong>: <strong>10:00 – 12:00</strong> e <strong>17:00 – 19:00</strong> (7 giorni su 7, compresi sabati, domeniche e festivi)[cite: 1, 2]. L'assenza ingiustificata comporta la perdita del trattamento economico e sanzione disciplinare[cite: 2].</li>
+          <li><strong>Comunicazione</strong>: immediata e <strong>prima dell'inizio del turno</strong> del primo giorno di assenza (anche per eventuale prosecuzione). Comunicare subito il numero PUC del certificato telematico (entro 2 giorni il cartaceo se eccezionalmente rilasciato dal medico). Inosservanza = assenza ingiustificata.</li>
+          <li><strong>Variazione Domicilio</strong>: obbligo di comunicare tempestivamente all'azienda qualsiasi cambio di indirizzo durante la malattia.</li>
+          <li><strong>Fasce Reperibilità Visite Fiscali</strong>: <strong>10:00 – 12:00</strong> e <strong>17:00 – 19:00</strong> (7 giorni su 7, compresi sabati, domeniche e festivi). L'assenza ingiustificata comporta la perdita del trattamento economico e sanzione disciplinare.</li>
         </ul>
 
         <h3>Periodo di Comporto e Trattamento Economico (Art. G34)</h3>
         <ul>
-          <li><strong>Conservazione del Posto</strong>: <strong>12 mesi in un triennio mobile</strong>[cite: 1, 2].</li>
+          <li><strong>Conservazione del Posto</strong>: <strong>12 mesi in un triennio mobile</strong>.</li>
           <li><strong>Trattamento Retributivo</strong>:
             <ul>
-              <li>Primi 6 mesi: <strong>100%</strong> della retribuzione mensile di fatto[cite: 1, 2].</li>
-              <li>Successivi 6 mesi: <strong>50%</strong> della retribuzione[cite: 1, 2].</li>
+              <li>Primi 6 mesi: <strong>100%</strong> della retribuzione mensile di fatto.</li>
+              <li>Successivi 6 mesi: <strong>50%</strong> della retribuzione.</li>
             </ul>
           </li>
           <li><strong>Giorni Salvi Esclusi dal Comporto</strong>:
             <ul>
-              <li>Tutti i giorni di <strong>ricovero ospedaliero sono esclusi sia dal comporto che dalle decurtazioni retributive</strong>[cite: 1, 2].</li>
-              <li>La <strong>convalescenza continuativa post-ricovero</strong> certificata dal medico di base (fino a un massimo di <strong>120 giorni</strong>) <strong>non si calcola nel comporto</strong> ed è retribuita al 100%[cite: 1, 2].</li>
+              <li>Tutti i giorni di <strong>ricovero ospedaliero sono esclusi sia dal comporto che dalle decurtazioni retributive</strong>.</li>
+              <li>La <strong>convalescenza continuativa post-ricovero</strong> certificata dal medico di base (fino a un massimo di <strong>120 giorni</strong>) <strong>non si calcola nel comporto</strong> ed è retribuita al 100%.</li>
             </ul>
           </li>
         </ul>
 
         <h3>Patologie Gravi, Disabilità e Infortuni</h3>
         <ul>
-          <li><strong>Oncologiche, Sclerosi Multipla, Distrofie Muscolari</strong>: limiti di comporto e stipendio <strong>triplicati</strong> (fino a 36 mesi tutelati)[cite: 1, 2]. Al termine, su richiesta, concessione di ulteriori <strong>12 mesi di aspettativa non retribuita</strong> con congelamento dei termini di recesso[cite: 1, 2].</li>
-          <li><strong>Disabilità Certificata</strong>: comporto aumentato del <strong>30%</strong> (previa attestazione al medico competente per la valutazione di accomodamenti ragionevoli sostenibili)[cite: 1, 2].</li>
-          <li><strong>Infortunio sul Lavoro e Malattie Professionali (Art. G37)</strong>: retribuzione mensile di fatto e posto garantiti al <strong>100%</strong> per tutto il periodo di inabilità riconosciuto dall'INAIL (compreso infortunio in itinere), con anticipazione datoriale in busta paga[cite: 1, 2].</li>
-          <li><strong>Assicurazione Infortuni Esclusi INAIL (Art. G36)</strong>: obbligo per l'azienda di stipulare polizze assicurative a favore dei dipendenti non tutelati dall'INAIL, con massimali almeno pari a quelli di legge[cite: 2].</li>
+          <li><strong>Oncologiche, Sclerosi Multipla, Distrofie Muscolari</strong>: limiti di comporto e stipendio <strong>triplicati</strong> (fino a 36 mesi tutelati). Al termine, su richiesta, concessione di ulteriori <strong>12 mesi di aspettativa non retribuita</strong> con congelamento dei termini di recesso.</li>
+          <li><strong>Disabilità Certificata</strong>: comporto aumentato del <strong>30%</strong> (previa attestazione al medico competente per la valutazione di accomodamenti ragionevoli sostenibili).</li>
+          <li><strong>Infortunio sul Lavoro e Malattie Professionali (Art. G37)</strong>: retribuzione mensile di fatto e posto garantiti al <strong>100%</strong> per tutto il periodo di inabilità riconosciuto dall'INAIL (compreso infortunio in itinere), con anticipazione datoriale in busta paga.</li>
+          <li><strong>Assicurazione Infortuni Esclusi INAIL (Art. G36)</strong>: obbligo per l'azienda di stipulare polizze assicurative a favore dei dipendenti non tutelati dall'INAIL, con massimali almeno pari a quelli di legge.</li>
         </ul>
       </div>
     </details>
@@ -1128,24 +1133,24 @@
       <div class="panel-body">
         <h3>Procedura di Garanzia (Art. 7 Statuto Lavoratori)</h3>
         <ol>
-          <li><strong>Contestazione Scritta</strong>: tempestiva e circostanziata con descrizione puntuale dei fatti addebitati[cite: 1, 2].</li>
-          <li><strong>5 Giorni di Termine a Difesa</strong>: il dipendente ha <strong>5 giorni di calendario</strong> dalla notifica per presentare difese scritte o chiedere audizione orale con assistenza sindacale[cite: 1, 2]. Se le giustificazioni sono accolte, il procedimento decade senza conseguenze[cite: 2].</li>
-          <li><strong>Termine Perentorio di Applicazione</strong>: la sanzione, una volta comminata, deve essere applicata entro <strong>60 giorni</strong> dall'esaurimento delle procedure e dell'eventuale arbitrato[cite: 2].</li>
-          <li><strong>Prescrizione Recidiva</strong>: qualsiasi provvedimento applicato <strong>si cancella definitivamente dopo 2 anni</strong>[cite: 1, 2].</li>
+          <li><strong>Contestazione Scritta</strong>: tempestiva e circostanziata con descrizione puntuale dei fatti addebitati.</li>
+          <li><strong>5 Giorni di Termine a Difesa</strong>: il dipendente ha <strong>5 giorni di calendario</strong> dalla notifica per presentare difese scritte o chiedere audizione orale con assistenza sindacale. Se le giustificazioni sono accolte, il procedimento decade senza conseguenze.</li>
+          <li><strong>Termine Perentorio di Applicazione</strong>: la sanzione, una volta comminata, deve essere applicata entro <strong>60 giorni</strong> dall'esaurimento delle procedure e dell'eventuale arbitrato.</li>
+          <li><strong>Prescrizione Recidiva</strong>: qualsiasi provvedimento applicato <strong>si cancella definitivamente dopo 2 anni</strong>.</li>
         </ol>
 
         <h3>Gradualità delle Sanzioni (Art. G40)</h3>
         <ul>
-          <li><strong>Richiamo verbale / scritto</strong>: lievi irregolarità di orario, mancata osservanza di istruzioni minori, collette o vendita biglietti sul posto di lavoro non autorizzate[cite: 1, 2].</li>
-          <li><strong>Multa (fino a 4 ore di retribuzione)</strong>: mancato uso dei DPI forniti, uso personale di smartphone/tablet in servizio, mancata visita medica periodica o mancata formazione, lievi danni colposi a macchinari senza fermo operativo, reclami formali scritti da passeggeri o vettori[cite: 1, 2].</li>
-          <li><strong>Sospensione (da 1 a 10 giorni)</strong>: assenza ingiustificata, irreperibilità a visita domiciliare INPS, stato di ebbrezza o alterazione in servizio, pubblicazione social di contenuti lesivi dell'immagine aziendale, violazioni gravi di security/safety, uso scorretto di dotazioni informatiche[cite: 1, 2].</li>
-          <li><strong>Licenziamento con Preavviso</strong>: assenza ingiustificata per oltre 4 giorni consecutivi, fumo in aree a rischio o divieto, alcolici/droghe in servizio, recidiva (2 sospensioni nei 24 mesi), grave insubordinazione con danno potenziale[cite: 1, 2].</li>
-          <li><strong>Licenziamento Senza Preavviso (In Tronco)</strong>: furto, manomissione o sottrazione di merci/bagagli, accesso abusivo in airside o su aeromobili, timbratura cartellino per altri, traffico illecito, molestie sessuali o violenza fisica/morale, abbandono del posto di lavoro, presentazione di certificati falsi[cite: 1, 2]. Ammessa la sospensione cautelare non disciplinare in pendenza di accertamento[cite: 2].</li>
+          <li><strong>Richiamo verbale / scritto</strong>: lievi irregolarità di orario, mancata osservanza di istruzioni minori, collette o vendita biglietti sul posto di lavoro non autorizzate.</li>
+          <li><strong>Multa (fino a 4 ore di retribuzione)</strong>: mancato uso dei DPI forniti, uso personale di smartphone/tablet in servizio, mancata visita medica periodica o mancata formazione, lievi danni colposi a macchinari senza fermo operativo, reclami formali scritti da passeggeri o vettori.</li>
+          <li><strong>Sospensione (da 1 a 10 giorni)</strong>: assenza ingiustificata, irreperibilità a visita domiciliare INPS, stato di ebbrezza o alterazione in servizio, pubblicazione social di contenuti lesivi dell'immagine aziendale, violazioni gravi di security/safety, uso scorretto di dotazioni informatiche.</li>
+          <li><strong>Licenziamento con Preavviso</strong>: assenza ingiustificata per oltre 4 giorni consecutivi, fumo in aree a rischio o divieto, alcolici/droghe in servizio, recidiva (2 sospensioni nei 24 mesi), grave insubordinazione con danno potenziale.</li>
+          <li><strong>Licenziamento Senza Preavviso (In Tronco)</strong>: furto, manomissione o sottrazione di merci/bagagli, accesso abusivo in airside o su aeromobili, timbratura cartellino per altri, traffico illecito, molestie sessuali o violenza fisica/morale, abbandono del posto di lavoro, presentazione di certificati falsi. Ammessa la sospensione cautelare non disciplinare in pendenza di accertamento.</li>
         </ul>
 
         <div class="notice-red">
           <strong>IMPIANTI TVCC E NUOVE TECNOLOGIE (Art. G38 Bis):</strong><br>
-          Le telecamere e i sistemi di videosorveglianza non possono in alcun caso essere impiegati per il controllo a distanza della prestazione o della produttività[cite: 1, 2]. I dati e i filmati <strong>non possono essere utilizzati a fini disciplinari</strong>, fatti salvi i soli casi di reati penali, dolo o colpa grave a danno dell'incolumità o del patrimonio aziendale[cite: 1, 2]. Vietata la cessione di dati a terzi[cite: 2].
+          Le telecamere e i sistemi di videosorveglianza non possono in alcun caso essere impiegati per il controllo a distanza della prestazione o della produttività. I dati e i filmati <strong>non possono essere utilizzati a fini disciplinari</strong>, fatti salvi i soli casi di reati penali, dolo o colpa grave a danno dell'incolumità o del patrimonio aziendale. Vietata la cessione di dati a terzi.
         </div>
       </div>
     </details>
@@ -1162,37 +1167,37 @@
       <div class="panel-body">
         <h3>Tetti Complessivi e Clausola Appalti</h3>
         <ul>
-          <li><strong>Tetto Plurimo Mercato del Lavoro (Art. G10)</strong>: l'utilizzo contemporaneo di contratti a termine e somministrazione non può superare il <strong>30%</strong> della forza lavoro a tempo indeterminato (durata max 36 mesi con informativa annuale)[cite: 2].</li>
-          <li><strong>Appalti e Tutela Anti-Dumping (Art. G4 Bis)</strong>: rispetto delle tutele minime contrattuali e informative sindacali preventive sopra soglia UE e tempestive sotto soglia ad alta intensità di manodopera[cite: 2].</li>
+          <li><strong>Tetto Plurimo Mercato del Lavoro (Art. G10)</strong>: l'utilizzo contemporaneo di contratti a termine e somministrazione non può superare il <strong>30%</strong> della forza lavoro a tempo indeterminato (durata max 36 mesi con informativa annuale).</li>
+          <li><strong>Appalti e Tutela Anti-Dumping (Art. G4 Bis)</strong>: rispetto delle tutele minime contrattuali e informative sindacali preventive sopra soglia UE e tempestive sotto soglia ad alta intensità di manodopera.</li>
         </ul>
 
         <h3>Periodo di Prova (Art. G5)</h3>
         <ul>
-          <li>Livelli 1S e 1: <strong>6 mesi</strong>. Livelli dal 2A al 6: <strong>3 mesi</strong>. Livelli 7, 8 e 9: <strong>2 mesi</strong>[cite: 1, 2].</li>
-          <li>Malattia oltre 5 giorni e infortunio sospendono la prova[cite: 1, 2]. In caso di licenziamento datoriale in prova, la retribuzione spetta fino alla metà (giorno 15) o a fine mese a seconda della quindicina di recesso[cite: 1, 2].</li>
+          <li>Livelli 1S e 1: <strong>6 mesi</strong>. Livelli dal 2A al 6: <strong>3 mesi</strong>. Livelli 7, 8 e 9: <strong>2 mesi</strong>.</li>
+          <li>Malattia oltre 5 giorni e infortunio sospendono la prova. In caso di licenziamento datoriale in prova, la retribuzione spetta fino alla metà (giorno 15) o a fine mese a seconda della quindicina di recesso.</li>
         </ul>
 
         <h3>Disciplina Part-Time (Art. G11)</h3>
         <ul>
-          <li><strong>Limiti orari</strong>: orizzontale 20-30 ore/settimana (min 4 ore/giorno); verticale 100-200 giorni/anno; misto 660-1.200 ore/anno[cite: 1, 2]. Tetto massimo del <strong>50%</strong> dell'organico full-time (esclusi part-time volontari)[cite: 2].</li>
-          <li><strong>Tutela del posto</strong>: il rifiuto del lavoratore di trasformare il rapporto da full a part-time o viceversa <strong>non costituisce mai motivo di licenziamento</strong>[cite: 2].</li>
-          <li><strong>Passaggio temporaneo da full a part-time</strong>: richiedibile fino a <strong>3 volte</strong> per periodi concordati da 6 a 24 mesi (riducibili di un terzo per scali con meno di 2 mln pax)[cite: 2]. Diritto di precedenza per il consolidamento a full-time trascorsi 18 o 36 mesi[cite: 2].</li>
-          <li><strong>Lavoro supplementare</strong>: compensato al <strong>+15%</strong> fino al 50% dell'orario individuale, e al <strong>+20%</strong> oltre tale soglia fino al limite full-time (onnicomprensivo di ratei e TFR)[cite: 1, 2]. Oltre il normale orario full-time si applicano le percentuali di straordinario[cite: 2].</li>
-          <li><strong>Clausole elastiche</strong>: variazione di turno con 48 ore di preavviso e indennità di <strong>0,52 €/giorno</strong> (fuori TFR)[cite: 1, 2]. Facoltà del dipendente di revocare il consenso decorsi almeno 5 mesi con 45 giorni di preavviso per comprovati motivi personali/familiari[cite: 2]. Mensa/buono pasto spettante con turni di almeno 6 ore[cite: 1, 2].</li>
+          <li><strong>Limiti orari</strong>: orizzontale 20-30 ore/settimana (min 4 ore/giorno); verticale 100-200 giorni/anno; misto 660-1.200 ore/anno. Tetto massimo del <strong>50%</strong> dell'organico full-time (esclusi part-time volontari).</li>
+          <li><strong>Tutela del posto</strong>: il rifiuto del lavoratore di trasformare il rapporto da full a part-time o viceversa <strong>non costituisce mai motivo di licenziamento</strong>.</li>
+          <li><strong>Passaggio temporaneo da full a part-time</strong>: richiedibile fino a <strong>3 volte</strong> per periodi concordati da 6 a 24 mesi (riducibili di un terzo per scali con meno di 2 mln pax). Diritto di precedenza per il consolidamento a full-time trascorsi 18 o 36 mesi.</li>
+          <li><strong>Lavoro supplementare</strong>: compensato al <strong>+15%</strong> fino al 50% dell'orario individuale, e al <strong>+20%</strong> oltre tale soglia fino al limite full-time (onnicomprensivo di ratei e TFR). Oltre il normale orario full-time si applicano le percentuali di straordinario.</li>
+          <li><strong>Clausole elastiche</strong>: variazione di turno con 48 ore di preavviso e indennità di <strong>0,52 €/giorno</strong> (fuori TFR). Facoltà del dipendente di revocare il consenso decorsi almeno 5 mesi con 45 giorni di preavviso per comprovati motivi personali/familiari. Mensa/buono pasto spettante con turni di almeno 6 ore.</li>
         </ul>
 
         <h3>Stagionalità e Tempo Determinato</h3>
         <ul>
-          <li><strong>Contratti a Termine Ordinari (Art. G13)</strong>: tetto massimo del <strong>20%</strong> della forza a tempo indeterminato su base regionale[cite: 2]. Ammessi rinnovi/proroghe per: picchi temporanei, riorganizzazioni, formazione/addestramento, gestione collettiva ferie, progetti di transizione digitale e AI[cite: 2].</li>
-          <li><strong>Stagionalità Aeroportuale (Art. G13 Bis)</strong>: ammessa per <strong>7 mesi tra aprile e ottobre</strong> (più 2 mesi distribuiti)[cite: 1, 2]. Esclusa dal tetto legale dei 24/36 mesi[cite: 1, 2]. Tetti: max 35% per tempo determinato, max 30% per somministrazione, max 25% in caso di ricorso combinato[cite: 2].</li>
-          <li><strong>Riconoscimento Anzianità (Art. G12)</strong>: in caso di assunzione a tempo indeterminato dopo periodi a termine o somministrazione sulle stesse mansioni, i mesi svolti valgono al <strong>50% ai fini del passaggio di livello</strong> (se non sono decorsi più di 12 mesi)[cite: 1, 2].</li>
+          <li><strong>Contratti a Termine Ordinari (Art. G13)</strong>: tetto massimo del <strong>20%</strong> della forza a tempo indeterminato su base regionale. Ammessi rinnovi/proroghe per: picchi temporanei, riorganizzazioni, formazione/addestramento, gestione collettiva ferie, progetti di transizione digitale e AI.</li>
+          <li><strong>Stagionalità Aeroportuale (Art. G13 Bis)</strong>: ammessa per <strong>7 mesi tra aprile e ottobre</strong> (più 2 mesi distribuiti). Esclusa dal tetto legale dei 24/36 mesi. Tetti: max 35% per tempo determinato, max 30% per somministrazione, max 25% in caso di ricorso combinato.</li>
+          <li><strong>Riconoscimento Anzianità (Art. G12)</strong>: in caso di assunzione a tempo indeterminato dopo periodi a termine o somministrazione sulle stesse mansioni, i mesi svolti valgono al <strong>50% ai fini del passaggio di livello</strong> (se non sono decorsi più di 12 mesi).</li>
         </ul>
 
         <h3>Clausola Sociale e Preavvisi di Licenziamento/Dimissioni</h3>
         <ul>
-          <li><strong>Clausola Sociale Cambio Gestore (Art. G4)</strong>: passaggio del personale senza prova e con conservazione dell'anzianità maturata[cite: 1, 2]. Selezione proporzionata su graduatorie per 3 fasce anagrafiche (&le;35 anni, 35-50 anni, &gt;50 anni) estraendo coppie tra il primo e l'ultimo della lista[cite: 1, 2].</li>
-          <li><strong>Preavviso Licenziamento (Art. G38)</strong>: 20 giorni per anno di anzianità (minimo 2 mesi, max 8 per liv. 1S-2B; minimo 1 mese, max 7 per gli altri)[cite: 2]. Durante il preavviso concessi permessi orari per ricerca lavoro[cite: 2]. In caso di decesso del dipendente, l'indennità spetta agli eredi (art. 2122 c.c.)[cite: 2].</li>
-          <li><strong>Preavviso Dimissioni</strong>: i termini a carico del dipendente <strong>sono ridotti esattamente alla metà</strong>[cite: 1, 2]. Decorrenza dal 15 o a fine mese[cite: 2].</li>
+          <li><strong>Clausola Sociale Cambio Gestore (Art. G4)</strong>: passaggio del personale senza prova e con conservazione dell'anzianità maturata. Selezione proporzionata su graduatorie per 3 fasce anagrafiche (&le;35 anni, 35-50 anni, &gt;50 anni) estraendo coppie tra il primo e l'ultimo della lista.</li>
+          <li><strong>Preavviso Licenziamento (Art. G38)</strong>: 20 giorni per anno di anzianità (minimo 2 mesi, max 8 per liv. 1S-2B; minimo 1 mese, max 7 per gli altri). Durante il preavviso concessi permessi orari per ricerca lavoro. In caso di decesso del dipendente, l'indennità spetta agli eredi (art. 2122 c.c.).</li>
+          <li><strong>Preavviso Dimissioni</strong>: i termini a carico del dipendente <strong>sono ridotti esattamente alla metà</strong>. Decorrenza dal 15 o a fine mese.</li>
         </ul>
       </div>
     </details>
@@ -1209,15 +1214,15 @@
       <div class="panel-body">
         <h3>Regolamentazione Generale Apprendistato (Art. G14)</h3>
         <ul>
-          <li><strong>Forma scritta</strong> obbligatoria; periodo di prova massimo di <strong>2 mesi di effettiva presenza</strong>[cite: 2]. Divieto di retribuzione a cottimo[cite: 2].</li>
-          <li><strong>Durata</strong>: minima 6 mesi, massima 36 mesi (48 mesi per diploma quadriennale regionale)[cite: 2].</li>
-          <li><strong>Comporto Malattia</strong>: <strong>180 giorni complessivi</strong> con retribuzione a carico azienda al <strong>66%</strong>[cite: 2]. Infortunio sul lavoro integrato al <strong>100%</strong> sin dal 1° giorno[cite: 2]. Possibilità di differire il termine formativo per assenze superiori a 30 giorni[cite: 2].</li>
-          <li><strong>Clausola di Stabilizzazione</strong>: per aziende con almeno 50 dipendenti, la stipula è subordinata alla conferma a tempo indeterminato di almeno il <strong>20%</strong> degli apprendisti giunti a scadenza nei 24 mesi precedenti[cite: 2].</li>
-          <li><strong>Recesso al termine</strong>: preavviso di 15 giorni; in assenza di disdetta il rapporto prosegue a tempo indeterminato e il 50% della durata dell'apprendistato è utile ai fini degli scatti di anzianità[cite: 2].</li>
+          <li><strong>Forma scritta</strong> obbligatoria; periodo di prova massimo di <strong>2 mesi di effettiva presenza</strong>. Divieto di retribuzione a cottimo.</li>
+          <li><strong>Durata</strong>: minima 6 mesi, massima 36 mesi (48 mesi per diploma quadriennale regionale).</li>
+          <li><strong>Comporto Malattia</strong>: <strong>180 giorni complessivi</strong> con retribuzione a carico azienda al <strong>66%</strong>. Infortunio sul lavoro integrato al <strong>100%</strong> sin dal 1° giorno. Possibilità di differire il termine formativo per assenze superiori a 30 giorni.</li>
+          <li><strong>Clausola di Stabilizzazione</strong>: per aziende con almeno 50 dipendenti, la stipula è subordinata alla conferma a tempo indeterminato di almeno il <strong>20%</strong> degli apprendisti giunti a scadenza nei 24 mesi precedenti.</li>
+          <li><strong>Recesso al termine</strong>: preavviso di 15 giorni; in assenza di disdetta il rapporto prosegue a tempo indeterminato e il 50% della durata dell'apprendistato è utile ai fini degli scatti di anzianità.</li>
         </ul>
 
         <h3>Trattamento Retributivo Progressivo</h3>
-        <p>Percentuali applicate su minimo tabellare e indennità di contingenza[cite: 2]:</p>
+        <p>Percentuali applicate su minimo tabellare e indennità di contingenza:</p>
         <div class="table-responsive">
           <table>
             <thead>
@@ -1241,11 +1246,11 @@
 
         <h3>Profili Formativi di Settore (Allegato 2)</h3>
         <ul>
-          <li><strong>Monte ore</strong>: formazione professionalizzante non inferiore a <strong>80 ore medie annue</strong> + 40 ore di formazione trasversale su sicurezza, disciplina e supporti informatici[cite: 2].</li>
-          <li><strong>Guardia Particolare Giurata (GPG)</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208 ore specialistiche (tecnologie controllo security, certificazioni ENAC, dangerous goods, viabilità airside, safety)[cite: 2].</li>
-          <li><strong>Operatore Unico Aeroportuale (OUA)</strong>: percorso da Liv. 8 a Liv. 6 (36 mesi) con 160 ore specialistiche (piano carico aa/mm, smistamento sottobordo, GPU/ASU/scale semoventi)[cite: 2].</li>
-          <li><strong>Agente di Rampa / Check-in</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208-240 ore specialistiche (DCS, centraggio velivoli, pilot check, de-icing, assistenza passeggeri)[cite: 2].</li>
-          <li><strong>Manutenzione Mezzi e Impianti</strong>: da Liv. 7 a Liv. 5 (36 mesi, 200 ore specialistiche su schemi tecnici, oleodinamica, meccatronica, prevenzione guasti)[cite: 2].</li>
+          <li><strong>Monte ore</strong>: formazione professionalizzante non inferiore a <strong>80 ore medie annue</strong> + 40 ore di formazione trasversale su sicurezza, disciplina e supporti informatici.</li>
+          <li><strong>Guardia Particolare Giurata (GPG)</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208 ore specialistiche (tecnologie controllo security, certificazioni ENAC, dangerous goods, viabilità airside, safety).</li>
+          <li><strong>Operatore Unico Aeroportuale (OUA)</strong>: percorso da Liv. 8 a Liv. 6 (36 mesi) con 160 ore specialistiche (piano carico aa/mm, smistamento sottobordo, GPU/ASU/scale semoventi).</li>
+          <li><strong>Agente di Rampa / Check-in</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208-240 ore specialistiche (DCS, centraggio velivoli, pilot check, de-icing, assistenza passeggeri).</li>
+          <li><strong>Manutenzione Mezzi e Impianti</strong>: da Liv. 7 a Liv. 5 (36 mesi, 200 ore specialistiche su schemi tecnici, oleodinamica, meccatronica, prevenzione guasti).</li>
         </ul>
       </div>
     </details>
@@ -1262,27 +1267,27 @@
       <div class="panel-body">
         <h3>Fondo Pensione Complementare PREVAER (Art. G42)</h3>
         <ul>
-          <li>Aderendo con il versamento del contributo dipendente dell'<strong>1%</strong> (su minimo, contingenza e scatti), l'azienda versa obbligatoriamente a suo carico[cite: 1, 2]:
+          <li>Aderendo con il versamento del contributo dipendente dell'<strong>1%</strong> (su minimo, contingenza e scatti), l'azienda versa obbligatoriamente a suo carico:
             <ul>
-              <li><strong>2,5%</strong> fino al 31/12/2025[cite: 1, 2].</li>
-              <li><strong>3,0% dal 1° gennaio 2026</strong>[cite: 1, 2].</li>
+              <li><strong>2,5%</strong> fino al 31/12/2025.</li>
+              <li><strong>3,0% dal 1° gennaio 2026</strong>.</li>
             </ul>
           </li>
-          <li>Per il personale a termine l'iscrizione e i contributi decorrono dal superamento della prova[cite: 2].</li>
+          <li>Per il personale a termine l'iscrizione e i contributi decorrono dal superamento della prova.</li>
         </ul>
 
         <h3>Assistenza Sanitaria Integrativa (Art. G43)</h3>
         <ul>
-          <li>A decorrere dal <strong>1° gennaio 2026</strong> contributo minimo aziendale di <strong>240,00 € annui a dipendente</strong> a tempo indeterminato (fatti salvi trattamenti aziendali migliorativi)[cite: 1, 2].</li>
-          <li>Possibilità di estensione facoltativa della copertura a familiari a carico o pacchetti aggiuntivi a carico del dipendente[cite: 2].</li>
+          <li>A decorrere dal <strong>1° gennaio 2026</strong> contributo minimo aziendale di <strong>240,00 € annui a dipendente</strong> a tempo indeterminato (fatti salvi trattamenti aziendali migliorativi).</li>
+          <li>Possibilità di estensione facoltativa della copertura a familiari a carico o pacchetti aggiuntivi a carico del dipendente.</li>
         </ul>
 
         <h3>Maternità, Congedi e Conciliazione Vita-Lavoro (Artt. G2, G2 Bis, G44)</h3>
         <ul>
-          <li><strong>Maternità Obbligatoria</strong>: integrazione al <strong>100% della retribuzione mensile di fatto</strong> + versamento integrale dei contributi aziendali al fondo <strong>Prevaer</strong>[cite: 1, 2]. Riconosciuto il congedo di paternità obbligatorio di legge[cite: 2].</li>
-          <li><strong>Congedi Parentali</strong>: preavviso di 12 giorni per fruizione giornaliera; 5 giorni per fruizione oraria (minimo 1 ora a inizio o fine turno, non frazionabile sotto l'equivalente di una giornata nel periodo)[cite: 1, 2].</li>
-          <li><strong>Donne Vittime di Violenza (Art. G2 Bis)</strong>: riconosciuti <strong>ulteriori 3 mesi di aspettativa retribuita al 100%</strong> oltre ai 3 mesi di legge (con preavviso di 5 giorni) e diritto alla trasformazione a part-time[cite: 1, 2].</li>
-          <li><strong>Premio di Risultato (PDR) ed EGR (Art. G1)</strong>: premio triennale variabile; nelle aziende prive di contrattazione integrativa spetta un <strong>EGR di 250,00 € all'anno</strong> erogato nel secondo semestre[cite: 1, 2]. Tregua sindacale vincolante di 3 mesi durante le trattative di rinnovo aziendale[cite: 2].</li>
+          <li><strong>Maternità Obbligatoria</strong>: integrazione al <strong>100% della retribuzione mensile di fatto</strong> + versamento integrale dei contributi aziendali al fondo <strong>Prevaer</strong>. Riconosciuto il congedo di paternità obbligatorio di legge.</li>
+          <li><strong>Congedi Parentali</strong>: preavviso di 12 giorni per fruizione giornaliera; 5 giorni per fruizione oraria (minimo 1 ora a inizio o fine turno, non frazionabile sotto l'equivalente di una giornata nel periodo).</li>
+          <li><strong>Donne Vittime di Violenza (Art. G2 Bis)</strong>: riconosciuti <strong>ulteriori 3 mesi di aspettativa retribuita al 100%</strong> oltre ai 3 mesi di legge (con preavviso di 5 giorni) e diritto alla trasformazione a part-time.</li>
+          <li><strong>Premio di Risultato (PDR) ed EGR (Art. G1)</strong>: premio triennale variabile; nelle aziende prive di contrattazione integrativa spetta un <strong>EGR di 250,00 € all'anno</strong> erogato nel secondo semestre. Tregua sindacale vincolante di 3 mesi durante le trattative di rinnovo aziendale.</li>
         </ul>
       </div>
     </details>
@@ -1299,28 +1304,28 @@
       <div class="panel-body">
         <h3>Missioni e Trasferte (Art. G31)</h3>
         <ul>
-          <li><strong>Rimborsi pasti</strong>: dovuti per partenze/rientri oltre le ore 08:00 (colazione), 13:00 (pranzo), 20:00 (cena)[cite: 1, 2]. Pernottamento per rientri oltre le ore 24:00[cite: 1, 2]. Anticipo spese garantito pari ad almeno il <strong>50%</strong>[cite: 1, 2].</li>
-          <li><strong>Rimborsi forfettari spese minute</strong>: <strong>10% del costo biglietto</strong> per viaggi in treno; <strong>5% del costo biglietto</strong> per viaggi aerei[cite: 2].</li>
-          <li><strong>Indennità tempo di viaggio fuori orario</strong>: <strong>10% della quota oraria</strong> (minimo + contingenza) per ciascuna ora di viaggio effettivo[cite: 1, 2].</li>
+          <li><strong>Rimborsi pasti</strong>: dovuti per partenze/rientri oltre le ore 08:00 (colazione), 13:00 (pranzo), 20:00 (cena). Pernottamento per rientri oltre le ore 24:00. Anticipo spese garantito pari ad almeno il <strong>50%</strong>.</li>
+          <li><strong>Rimborsi forfettari spese minute</strong>: <strong>10% del costo biglietto</strong> per viaggi in treno; <strong>5% del costo biglietto</strong> per viaggi aerei.</li>
+          <li><strong>Indennità tempo di viaggio fuori orario</strong>: <strong>10% della quota oraria</strong> (minimo + contingenza) per ciascuna ora di viaggio effettivo.</li>
         </ul>
 
         <h3>Prevenzione Aggressioni, RLS e Sicurezza (Artt. G2 Ter, G3, G37 Bis)</h3>
         <ul>
-          <li>Protocolli con gestore, ENAC e Polizia per proteggere il personale di front-line con barriere fisiche, formazione, supporti tecnologici e aggiornamento continuo del DVR[cite: 1, 2]. Rinvio alle agibilità sindacali degli RLS ex art. 12 Parte Generale[cite: 2].</li>
+          <li>Protocolli con gestore, ENAC e Polizia per proteggere il personale di front-line con barriere fisiche, formazione, supporti tecnologici e aggiornamento continuo del DVR. Rinvio alle agibilità sindacali degli RLS ex art. 12 Parte Generale.</li>
         </ul>
 
         <div class="notice-amber">
           <strong>ACCORDO DI CONFLUENZA ED INTERNALIZZAZIONI (Allegato 3):</strong><br>
           In caso di internalizzazione di servizi aeroportuali precedentemente affidati in appalto a terzi o di nuova adesione al CCNL, per consentire un riallineamento graduale, i minimi tabellari (Art. G20) e le maggiorazioni (Art. G15) sono applicati in misura progressiva nei primi 4 anni:
-          <strong>80% (1° anno) &rarr; 85% (2° anno) &rarr; 90% (3° anno) &rarr; 95% (4° anno)</strong>, facendo salvo il trattamento di partenza se più favorevole[cite: 2]. Dal 5° anno scatta l'applicazione integrale del CCNL[cite: 2].
+          <strong>80% (1° anno) &rarr; 85% (2° anno) &rarr; 90% (3° anno) &rarr; 95% (4° anno)</strong>, facendo salvo il trattamento di partenza se più favorevole. Dal 5° anno scatta l'applicazione integrale del CCNL.
         </div>
 
         <h3>Mobilità Interna e Norme Finali</h3>
         <ul>
-          <li><strong>Trasferimento Sede (Art. G32)</strong>: rimborso spese trasloco e indennità di <strong>10 quote giornaliere</strong> per il dipendente + 5 per ciascun familiare a carico (anticipo fino al 50%)[cite: 1, 2].</li>
-          <li><strong>Mobilità Orizzontale (Art. G33)</strong>: consentita temporaneamente per attività omogenee a parità di livello; confronto sindacale preventivo entro 5 giorni per spostamenti collettivi definitivi[cite: 1, 2].</li>
-          <li><strong>Aspettativa e Sindacato</strong>: aspettativa non retribuita (Art. G35) non computabile nell'anzianità[cite: 1, 2]. Contributo sindacale all'<strong>1% su paga base e contingenza per 14 mensilità</strong> (Art. G46)[cite: 1, 2]. Permessi RSU con preavviso di 24 ore (Art. G3)[cite: 1, 2].</li>
-          <li><strong>Inscindibilità e Durata (Artt. G47, G48)</strong>: contratto inscindibile[cite: 1, 2]. Vigenza dal 1° gennaio 2025 al <strong>31 dicembre 2027</strong>; proroga tacita e ultra-attività a tempo indeterminato in assenza di disdetta con preavviso di almeno 6 mesi[cite: 1, 2].</li>
+          <li><strong>Trasferimento Sede (Art. G32)</strong>: rimborso spese trasloco e indennità di <strong>10 quote giornaliere</strong> per il dipendente + 5 per ciascun familiare a carico (anticipo fino al 50%).</li>
+          <li><strong>Mobilità Orizzontale (Art. G33)</strong>: consentita temporaneamente per attività omogenee a parità di livello; confronto sindacale preventivo entro 5 giorni per spostamenti collettivi definitivi.</li>
+          <li><strong>Aspettativa e Sindacato</strong>: aspettativa non retribuita (Art. G35) non computabile nell'anzianità. Contributo sindacale all'<strong>1% su paga base e contingenza per 14 mensilità</strong> (Art. G46). Permessi RSU con preavviso di 24 ore (Art. G3).</li>
+          <li><strong>Inscindibilità e Durata (Artt. G47, G48)</strong>: contratto inscindibile. Vigenza dal 1° gennaio 2025 al <strong>31 dicembre 2027</strong>; proroga tacita e ultra-attività a tempo indeterminato in assenza di disdetta con preavviso di almeno 6 mesi.</li>
         </ul>
       </div>
     </details>
@@ -1432,97 +1437,7 @@
     </div>
   </div>
 
-  <!-- GENERATORE ICONA DINAMICA ED ELEVATA A PWA STANDALONE -->
-  <script>
-    (function initPwaAssets() {
-      // 1. Genera l'icona Radar PNG a 512x512 via Canvas
-      const canvas = document.createElement('canvas');
-      canvas.width = 512;
-      canvas.height = 512;
-      const ctx = canvas.getContext('2d');
-
-      // Sfondo dark radar con angoli arrotondati
-      ctx.fillStyle = '#070d17';
-      ctx.beginPath();
-      ctx.roundRect(0, 0, 512, 512, 96);
-      ctx.fill();
-
-      // Scudo Ciano
-      ctx.strokeStyle = '#38bdf8';
-      ctx.lineWidth = 20;
-      ctx.fillStyle = '#0f1926';
-      ctx.beginPath();
-      ctx.moveTo(256, 54);
-      ctx.lineTo(440, 130);
-      ctx.lineTo(440, 270);
-      ctx.bezierCurveTo(440, 380, 256, 458, 256, 458);
-      ctx.bezierCurveTo(256, 458, 72, 380, 72, 270);
-      ctx.lineTo(72, 130);
-      ctx.closePath();
-      ctx.fill();
-      ctx.stroke();
-
-      // Sagoma Aereo Radar Verde Neon
-      ctx.fillStyle = '#00ff66';
-      ctx.shadowColor = '#00ff66';
-      ctx.shadowBlur = 18;
-      ctx.beginPath();
-      ctx.moveTo(256, 140);
-      ctx.lineTo(290, 224);
-      ctx.lineTo(374, 250);
-      ctx.lineTo(298, 284);
-      ctx.lineTo(306, 342);
-      ctx.lineTo(256, 316);
-      ctx.lineTo(206, 342);
-      ctx.lineTo(214, 284);
-      ctx.lineTo(138, 250);
-      ctx.lineTo(222, 224);
-      ctx.closePath();
-      ctx.fill();
-      ctx.shadowBlur = 0;
-
-      const iconPngData = canvas.toDataURL('image/png');
-
-      // 2. Collega Favicon e Apple-Touch-Icon
-      const appleIcon = document.createElement('link');
-      appleIcon.rel = 'apple-touch-icon';
-      appleIcon.href = iconPngData;
-      document.head.appendChild(appleIcon);
-
-      const favIcon = document.createElement('link');
-      favIcon.rel = 'icon';
-      favIcon.type = 'image/png';
-      favIcon.href = iconPngData;
-      document.head.appendChild(favIcon);
-
-      // 3. Inietta il Manifest Dinamico con Icona PNG Reale
-      const pwaManifest = {
-        name: "Contratto",
-        short_name: "Contratto",
-        start_url: window.location.href,
-        scope: "./",
-        display: "standalone",
-        background_color: "#070d17",
-        theme_color: "#020617",
-        icons: [
-          {
-            src: iconPngData,
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable"
-          }
-        ]
-      };
-      const manifestStr = JSON.stringify(pwaManifest);
-      const manifestBlob = new Blob([manifestStr], { type: 'application/manifest+json' });
-      const manifestLink = document.createElement('link');
-      manifestLink.rel = 'manifest';
-      manifestLink.href = URL.createObjectURL(manifestBlob);
-      document.head.appendChild(manifestLink);
-    })();
-  </script>
-
-  <!-- SCRIPT MOTORE DI RICERCA, TOGGLE, QUICK JUMP, BACK-TO-TOP & AUTH -->
+  <!-- SCRIPT MOTORE DI RICERCA, TOGGLE, QUICK JUMP, BACK-TO-TOP & SERVICE WORKER -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       // 1. RICERCA RAPIDA
@@ -1819,17 +1734,10 @@
       calcPeriodSelect.addEventListener('change', calculateAll);
       calcScattiSelect.addEventListener('change', calculateAll);
 
-      // 6. SERVICE WORKER PWA STANDALONE
+      // 6. SERVICE WORKER FISICO (CRITERIO UFFICIALE GOOGLE PWA)
       if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
-        const swScript = `
-          self.addEventListener('install', e => self.skipWaiting());
-          self.addEventListener('activate', e => clients.claim());
-          self.addEventListener('fetch', e => {
-            e.respondWith(fetch(e.request).catch(() => caches.match(e.request)));
-          });
-        `;
-        const blob = new Blob([swScript], { type: 'application/javascript' });
-        navigator.serviceWorker.register(URL.createObjectURL(blob), { scope: './' }).catch(() => {});
+        navigator.serviceWorker.register('./sw.js', { scope: './' })
+          .catch(err => console.error('SW Error:', err));
       }
     });
   </script>
