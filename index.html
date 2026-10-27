@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Contratto">
-  <title>Contratto</title>
+  <title>CCNL Trasporto Aereo - Sezione Gestori Aeroportuali</title>
 
   <!-- PWA MANIFEST E ICONE -->
   <link rel="manifest" href="manifest.json">
@@ -55,7 +55,6 @@
       will-change: transform;
     }
 
-    /* CLASSE PER FAR SALIRE E SCOMPARIRE L'HEADER */
     header.header-hidden {
       transform: translateY(-100%);
     }
@@ -94,7 +93,7 @@
     }
 
     header h1 {
-      font-size: 1.34rem;
+      font-size: 1.3rem;
       font-weight: 900;
       letter-spacing: 0.04em;
       cursor: pointer;
@@ -103,32 +102,24 @@
       margin: 2px 0 0 0;
       line-height: 1.2;
       text-transform: uppercase;
-      transition: all 0.2s ease;
       background: linear-gradient(180deg, #ffffff 40%, #cbd5e1 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
 
-    header h1:active {
-      transform: scale(0.98);
-      opacity: 0.85;
-    }
-
     .header-subline {
-      font-size: 0.80rem;
+      font-size: 0.78rem;
       color: var(--runway-cyan);
       font-family: var(--font-mono);
       font-weight: 600;
-      letter-spacing: 0.03em;
       text-transform: uppercase;
       margin-top: 1px;
     }
 
     .header-subtext {
-      font-size: 0.68rem;
+      font-size: 0.65rem;
       color: var(--text-muted);
       font-family: var(--font-mono);
-      letter-spacing: 0.05em;
       text-transform: uppercase;
       margin-top: 3px;
     }
@@ -148,7 +139,6 @@
       color: var(--runway-cyan);
       font-size: 0.85rem;
       pointer-events: none;
-      font-family: var(--font-mono);
     }
 
     .search-input {
@@ -161,18 +151,12 @@
       color: #fff;
       font-family: var(--font-sans);
       outline: none;
-      transition: all 0.2s ease;
     }
 
     .search-input:focus {
       border-color: var(--runway-cyan);
       box-shadow: 0 0 10px rgba(56, 189, 248, 0.35);
       background: #020617;
-    }
-
-    .search-input::placeholder {
-      color: var(--text-muted);
-      font-size: 0.8rem;
     }
 
     .clear-btn {
@@ -185,10 +169,7 @@
       cursor: pointer;
       display: none;
       padding: 4px;
-      line-height: 1;
     }
-
-    .clear-btn:hover { color: #fff; }
 
     /* QUICK JUMP PILLS */
     .quick-jump-container {
@@ -213,10 +194,9 @@
       padding: 4px 10px;
       border-radius: 12px;
       text-decoration: none;
-      transition: all 0.2s ease;
       cursor: pointer;
     }
-    .jump-pill:hover, .jump-pill:active {
+    .jump-pill:hover {
       color: #fff;
       border-color: var(--runway-cyan);
       background: rgba(56, 189, 248, 0.15);
@@ -236,10 +216,7 @@
       min-height: 20px;
     }
 
-    .view-toggles {
-      display: flex;
-      gap: 6px;
-    }
+    .view-toggles { display: flex; gap: 6px; }
 
     .toggle-btn {
       background: transparent;
@@ -250,11 +227,6 @@
       padding: 2px 7px;
       border-radius: 4px;
       cursor: pointer;
-      transition: all 0.15s ease;
-    }
-    .toggle-btn:hover {
-      color: #fff;
-      border-color: var(--runway-cyan);
     }
 
     mark.ops-highlight {
@@ -262,7 +234,6 @@
       color: #fde68a;
       border-bottom: 1px solid var(--radar-amber);
       padding: 0 2px;
-      border-radius: 2px;
     }
 
     .container {
@@ -278,12 +249,9 @@
       margin-bottom: 12px;
       overflow: hidden;
       border-left: 3px solid var(--runway-cyan);
-      transition: opacity 0.2s ease;
     }
 
-    details.section-card.search-hidden {
-      display: none !important;
-    }
+    details.section-card.search-hidden { display: none !important; }
 
     summary.section-header {
       padding: 15px 14px;
@@ -296,19 +264,9 @@
       list-style: none;
     }
 
-    summary.section-header::-webkit-details-marker {
-      display: none;
-    }
+    summary.section-header::-webkit-details-marker { display: none; }
 
-    summary.section-header:active {
-      background: rgba(30, 41, 59, 0.9);
-    }
-
-    .section-title {
-      display: flex;
-      flex-direction: column;
-      gap: 2px;
-    }
+    .section-title { display: flex; flex-direction: column; gap: 2px; }
 
     .ops-code {
       font-family: var(--font-mono);
@@ -318,11 +276,7 @@
       letter-spacing: 0.05em;
     }
 
-    .card-title {
-      font-size: 0.94rem;
-      font-weight: 700;
-      color: #fff;
-    }
+    .card-title { font-size: 0.94rem; font-weight: 700; color: #fff; }
 
     .chevron {
       color: var(--runway-cyan);
@@ -331,13 +285,8 @@
       font-family: var(--font-mono);
     }
 
-    details[open] .chevron {
-      transform: rotate(180deg);
-    }
-
-    details[open] summary.section-header {
-      border-bottom: 1px solid var(--radar-border);
-    }
+    details[open] .chevron { transform: rotate(180deg); }
+    details[open] summary.section-header { border-bottom: 1px solid var(--radar-border); }
 
     .panel-body {
       padding: 14px 12px;
@@ -351,7 +300,6 @@
       color: var(--runway-cyan);
       font-family: var(--font-mono);
       text-transform: uppercase;
-      letter-spacing: 0.03em;
       margin: 14px 0 6px 0;
       padding-bottom: 3px;
       border-bottom: 1px dashed var(--radar-border);
@@ -379,17 +327,8 @@
       font-family: var(--font-mono);
     }
 
-    th, td {
-      padding: 7px 9px;
-      border-bottom: 1px solid var(--radar-border);
-    }
-
-    th {
-      background: #020617;
-      color: var(--runway-cyan);
-      font-weight: 700;
-    }
-
+    th, td { padding: 7px 9px; border-bottom: 1px solid var(--radar-border); }
+    th { background: #020617; color: var(--runway-cyan); font-weight: 700; }
     tr:nth-child(even) td { background: rgba(2, 6, 23, 0.4); }
 
     .notice-amber {
@@ -446,25 +385,12 @@
       z-index: 999;
     }
 
-    .back-to-top-btn.visible {
-      opacity: 1;
-      visibility: visible;
-    }
+    .back-to-top-btn.visible { opacity: 1; visibility: visible; }
 
-    .back-to-top-btn:hover {
-      background: var(--runway-cyan);
-      color: #070d17;
-      box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
-      transform: translateY(-2px);
-    }
-
-    /* MODAL AUTENTICAZIONE RADAR */
-    .auth-modal-overlay {
+    /* MODALI */
+    .auth-modal-overlay, .calc-modal-overlay {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
+      top: 0; left: 0; width: 100%; height: 100%;
       background: rgba(7, 13, 23, 0.88);
       backdrop-filter: blur(8px);
       display: none;
@@ -474,12 +400,12 @@
       padding: 16px;
     }
 
-    .auth-modal-box {
+    .auth-modal-box, .calc-modal-box {
       background: var(--radar-surface);
       border: 2px solid var(--runway-cyan);
       border-radius: 10px;
       width: 100%;
-      max-width: 420px;
+      max-width: 480px;
       padding: 22px 20px;
       box-shadow: 0 10px 35px rgba(0, 0, 0, 0.9);
       position: relative;
@@ -495,29 +421,12 @@
       padding: 2px 7px;
       border-radius: 4px;
       margin-bottom: 8px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
     }
 
-    .auth-modal-header h2 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #fff;
-      letter-spacing: 0.02em;
-    }
+    .auth-modal-header h2, .calc-modal-title { font-size: 1.05rem; font-weight: 800; color: #fff; }
+    .auth-modal-header p { font-size: 0.78rem; color: var(--text-muted); margin-top: 4px; font-family: var(--font-mono); }
 
-    .auth-modal-header p {
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      margin-top: 4px;
-      font-family: var(--font-mono);
-    }
-
-    .auth-input-wrapper {
-      margin: 18px 0 12px 0;
-    }
-
-    .auth-input {
+    .auth-input, .calc-select {
       width: 100%;
       background: #020617;
       border: 1px solid var(--radar-border);
@@ -527,250 +436,47 @@
       color: var(--runway-cyan);
       font-family: var(--font-mono);
       outline: none;
-      letter-spacing: 0.15em;
-      transition: all 0.2s ease;
     }
 
-    .auth-input:focus {
-      border-color: var(--runway-cyan);
-      box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
-    }
+    .auth-error-msg { font-size: 0.72rem; font-family: var(--font-mono); color: var(--alert-red); min-height: 18px; margin-top: 4px; }
 
-    .auth-error-msg {
-      font-size: 0.72rem;
-      font-family: var(--font-mono);
-      color: var(--alert-red);
-      min-height: 18px;
-      margin-top: 4px;
-    }
+    .auth-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 14px; }
 
-    .auth-actions {
-      display: flex;
-      justify-content: flex-end;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .btn-auth-cancel {
-      background: transparent;
-      border: 1px solid var(--radar-border);
-      color: var(--text-muted);
+    .btn-auth-cancel, .btn-auth-submit {
       font-family: var(--font-mono);
       font-size: 0.76rem;
       padding: 7px 14px;
       border-radius: 5px;
       cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .btn-auth-cancel:hover { color: #fff; border-color: #64748b; }
-
-    .btn-auth-submit {
-      background: rgba(56, 189, 248, 0.15);
-      border: 1px solid var(--runway-cyan);
-      color: var(--runway-cyan);
-      font-family: var(--font-mono);
-      font-size: 0.76rem;
-      font-weight: 700;
-      padding: 7px 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-    .btn-auth-submit:hover {
-      background: var(--runway-cyan);
-      color: #020617;
-      box-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
     }
 
-    @keyframes shakeAuth {
-      0%, 100% { transform: translateX(0); }
-      20%, 60% { transform: translateX(-6px); }
-      40%, 80% { transform: translateX(6px); }
-    }
-    .shake { animation: shakeAuth 0.35s ease-in-out; }
+    .btn-auth-cancel { background: transparent; border: 1px solid var(--radar-border); color: var(--text-muted); }
+    .btn-auth-submit { background: rgba(56, 189, 248, 0.15); border: 1px solid var(--runway-cyan); color: var(--runway-cyan); font-weight: 700; }
 
-    /* CALCOLATORE MODAL */
-    .calc-modal-overlay {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(7, 13, 23, 0.85);
-      backdrop-filter: blur(6px);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      padding: 16px;
-    }
+    .calc-modal-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--radar-border); padding-bottom: 10px; margin-bottom: 14px; }
+    .calc-modal-close { background: transparent; border: none; color: var(--text-muted); font-size: 1.1rem; cursor: pointer; }
+    .calc-form-group { margin-bottom: 12px; }
+    .calc-form-group label { display: block; font-size: 0.74rem; color: var(--text-muted); font-family: var(--font-mono); margin-bottom: 4px; text-transform: uppercase; }
 
-    .calc-modal-box {
-      background: #0f1926;
-      border: 2px solid var(--runway-cyan);
-      border-radius: 10px;
-      width: 100%;
-      max-width: 480px;
-      padding: 18px 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-      position: relative;
-    }
+    .calc-results-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; border-top: 1px dashed var(--radar-border); padding-top: 12px; }
+    .calc-res-item { background: rgba(2, 6, 23, 0.6); border: 1px solid var(--radar-border); border-radius: 6px; padding: 8px; }
+    .calc-res-label { font-size: 0.65rem; font-family: var(--font-mono); color: var(--text-muted); text-transform: uppercase; }
+    .calc-res-val { font-size: 0.95rem; font-weight: 700; color: var(--runway-cyan); font-family: var(--font-mono); margin-top: 2px; }
 
-    .calc-modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid var(--radar-border);
-      padding-bottom: 10px;
-      margin-bottom: 14px;
-    }
-
-    .calc-modal-title {
-      font-size: 0.96rem;
-      font-weight: 700;
-      color: #fff;
-      font-family: var(--font-mono);
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .calc-modal-close {
-      background: transparent;
-      border: none;
-      color: var(--text-muted);
-      font-size: 1.1rem;
-      cursor: pointer;
-      line-height: 1;
-    }
-    .calc-modal-close:hover { color: #fff; }
-
-    .calc-form-group {
-      margin-bottom: 12px;
-    }
-
-    .calc-form-group label {
-      display: block;
-      font-size: 0.74rem;
-      color: var(--text-muted);
-      font-family: var(--font-mono);
-      margin-bottom: 4px;
-      text-transform: uppercase;
-    }
-
-    .calc-select {
-      width: 100%;
-      background: #070d17;
-      border: 1px solid var(--radar-border);
-      color: #fff;
-      font-family: var(--font-mono);
-      font-size: 0.82rem;
-      padding: 7px 10px;
-      border-radius: 5px;
-      outline: none;
-    }
-    .calc-select:focus { border-color: var(--runway-cyan); }
-
-    .calc-results-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-top: 14px;
-      border-top: 1px dashed var(--radar-border);
-      padding-top: 12px;
-    }
-
-    .calc-res-item {
-      background: rgba(2, 6, 23, 0.6);
-      border: 1px solid var(--radar-border);
-      border-radius: 6px;
-      padding: 8px;
-    }
-
-    .calc-res-label {
-      font-size: 0.65rem;
-      font-family: var(--font-mono);
-      color: var(--text-muted);
-      text-transform: uppercase;
-    }
-
-    .calc-res-val {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--runway-cyan);
-      font-family: var(--font-mono);
-      margin-top: 2px;
-    }
-
-    /* CSS PRINT PROFESSIONAL */
     @media print {
-      body {
-        background-color: #ffffff !important;
-        color: #000000 !important;
-        font-size: 10pt;
-        padding-bottom: 0;
-      }
-
-      header, .search-box-wrapper, .search-status-bar, .quick-jump-container, .back-to-top-btn, .chevron, .calc-modal-overlay, .auth-modal-overlay {
-        display: none !important;
-      }
-
-      .container {
-        max-width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-      }
-
-      details.section-card {
-        border: 1px solid #ccc !important;
-        background: #ffffff !important;
-        page-break-inside: avoid;
-        margin-bottom: 14pt;
-        border-left: 4pt solid #000 !important;
-      }
-
-      summary.section-header {
-        background: #f0f0f0 !important;
-        border-bottom: 1px solid #000 !important;
-        color: #000 !important;
-      }
-
+      body { background-color: #ffffff !important; color: #000000 !important; font-size: 10pt; padding-bottom: 0; }
+      header, .search-box-wrapper, .search-status-bar, .quick-jump-container, .back-to-top-btn, .chevron, .calc-modal-overlay, .auth-modal-overlay { display: none !important; }
+      .container { max-width: 100% !important; padding: 0 !important; margin: 0 !important; }
+      details.section-card { border: 1px solid #ccc !important; background: #ffffff !important; page-break-inside: avoid; margin-bottom: 14pt; border-left: 4pt solid #000 !important; }
+      summary.section-header { background: #f0f0f0 !important; border-bottom: 1px solid #000 !important; color: #000 !important; }
       .card-title { color: #000000 !important; }
       .ops-code { color: #555555 !important; }
-
-      .panel-body {
-        background: #ffffff !important;
-        color: #000000 !important;
-        display: block !important;
-      }
-
-      .panel-body h3 {
-        color: #000 !important;
-        border-bottom: 1px solid #999 !important;
-      }
-
-      table {
-        font-size: 8pt;
-        border-collapse: collapse;
-      }
-
-      th {
-        background: #e5e5e5 !important;
-        color: #000 !important;
-        border: 1px solid #999 !important;
-      }
-
-      td {
-        color: #000 !important;
-        border: 1px solid #ccc !important;
-        background: #fff !important;
-      }
-
-      .notice-amber, .notice-red, .notice-cyan {
-        background: #f8f8f8 !important;
-        color: #000 !important;
-        border-left: 3pt solid #000 !important;
-      }
+      .panel-body { background: #ffffff !important; color: #000000 !important; display: block !important; }
+      .panel-body h3 { color: #000 !important; border-bottom: 1px solid #999 !important; }
+      table { font-size: 8pt; border-collapse: collapse; }
+      th { background: #e5e5e5 !important; color: #000 !important; border: 1px solid #999 !important; }
+      td { color: #000 !important; border: 1px solid #ccc !important; background: #fff !important; }
+      .notice-amber, .notice-red, .notice-cyan { background: #f8f8f8 !important; color: #000 !important; border-left: 3pt solid #000 !important; }
     }
   </style>
 </head>
@@ -780,10 +486,10 @@
     <div class="header-branding">
       <div class="badge-ops">
         <span class="badge-dot"></span>
-        TRASP-AER // SEZIONE GESTORI
+        TRASP-AER // SEZIONE GESTORI AEROPORTUALI
       </div>
       <h1 id="opsHeaderTitle" title="CCNL Trasporto Aereo Gestori">CCNL TRASPORTO AEREO</h1>
-      <div class="header-subline">Parte Specifica Gestori Aeroportuali // 2025 – 2027</div>
+      <div class="header-subline">PARTE SPECIFICA GESTORI AEROPORTUALI // 2025 – 2027</div>
       <div class="header-subtext">Accordo Nazionale 4 Giugno 2025 // Manuale Operativo Integrale</div>
     </div>
 
@@ -797,11 +503,11 @@
 
   <!-- QUICK JUMP PILLS -->
   <div class="quick-jump-container">
+    <a class="jump-pill" data-target="sec-05">📈 Classificazione & Livelli</a>
     <a class="jump-pill" data-target="sec-01">⏱️ Orario & Turni</a>
     <a class="jump-pill" data-target="sec-02">💰 Minimi & Stipendio</a>
     <a class="jump-pill" data-target="sec-03">⚡ Indennità & Notte</a>
     <a class="jump-pill" data-target="sec-04">🏖️ Ferie & ROL</a>
-    <a class="jump-pill" data-target="sec-05">📈 Livelli & GPG</a>
     <a class="jump-pill" data-target="sec-06">🏥 Malattia & Comporto</a>
     <a class="jump-pill" data-target="sec-07">⚖️ Disciplinare & TVCC</a>
     <a class="jump-pill" data-target="sec-08">📋 Lavoro & Part-Time</a>
@@ -820,69 +526,122 @@
 
   <div class="container" id="sectionsContainer">
 
-    <!-- SEZIONE 01: ORARIO E PRESENZA -->
-    <details class="section-card" id="sec-01">
+    <!-- SEZIONE 05: CLASSIFICAZIONE DEL PERSONALE E MANSIONI (ART. G6, ALL. 1) -->
+    <details class="section-card" id="sec-05">
       <summary class="section-header">
         <div class="section-title">
-          <span class="ops-code">ARTT. G8, G9, G16, G16 BIS</span>
-          <span class="card-title">1. Orario, Turnazione, Flessibilità e Presenza</span>
+          <span class="ops-code">ART. G6, ART. G7, ALLEGATO 1</span>
+          <span class="card-title">1. Classificazione del Personale, Livelli e Mansioni</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Orario Effettivo e Media Annuale</h3>
+        <h3>Declaratoria Generale dei Livelli di Inquadramento (Art. G6)</h3>
+        <p>Il personale gestori aeroportuali è inquadrato nei seguenti livelli retributivi e funzionali:</p>
+
         <ul>
-          <li><strong>Orario Normale Retribuito</strong>: fissato in <strong>38 ore e 30 minuti settimanali</strong>, su 5 o 6 giorni lavorativi.</li>
-          <li><strong>Pausa Giornaliera Non Turnisti</strong>: nei turni a orario spezzato non avvicendato, l'intervallo tra i due periodi è <strong>non superiore a 1 ora</strong>.</li>
-          <li><strong>Flessibilità Multiriparto (12 Mesi)</strong>: l'azienda può modulare l'orario settimanale in funzione dei picchi stagionali di traffico passeggeri o merci. La media massima settimanale nell'arco di 12 mesi, inclusi tutti gli straordinari, non può superare il tetto legale delle <strong>48 ore</strong>.</li>
-          <li><strong>Saldo Ore Flessibilità (Art. G8 p. II)</strong>: le ore aggiuntive svolte nei picchi vanno recuperate con corrispondenti riduzioni nei periodi di minore intensità. Il mancato godimento entro l'anno dà diritto alla <strong>liquidazione delle ore residue nel mese successivo</strong> con le maggiorazioni dello straordinario diurno (+25% feriale, +30% nel feriale non lavorativo).</li>
+          <li><strong>LIVELLO 1 SUPER (Parametro 270)</strong>: Quadro/Lavoratori con funzioni direttive elevate, responsabilità di coordinamento strategico di settori aziendali o scali complessi, con ampia autonomia decisionale.</li>
+          <li><strong>LIVELLO 1 (Parametro 245)</strong>: Lavoratori svolgenti funzioni concettuali ad alto contenuto specialistico, coordinamento di reparti/settori operativi aeroportuali o ruoli tecnici di elevata complessità.</li>
+          <li><strong>LIVELLO 2A (Parametro 224)</strong>: Lavoratori di concetto che svolgono mansioni tecniche o amministrative complesse, coordinando operativamente gruppi di lavoro o un’area specialistica di scalo.</li>
+          <li><strong>LIVELLO 2B (Parametro 210)</strong>: Lavoratori che svolgono con autonomia esecutiva mansioni specialistiche amministrative, tecniche o operative di scalo (es. capi squadra/coordinatori di piazzale o sicurezza).</li>
+          <li><strong>LIVELLO 3 (Parametro 195)</strong>: Lavoratori esecutivi con provata esperienza e qualificazione polivalente. Mansioni di concetto o tecniche operative: Agenti di Scalo senior polivalenti, manutentori specializzati.</li>
+          <li><strong>LIVELLO 4 (Parametro 176 - Livello Base di Riferimento)</strong>: Mansioni operative d'impiego o tecniche qualificate. Inquadramento a regime per gli <strong>Addetti di Scalo</strong> (Check-in, Gate, Rampa, Lost & Found, Biglietteria) e punto di arrivo per la formazione specialistica GPG.</li>
+          <li><strong>LIVELLO 5 (Parametro 166)</strong>: Inquadramento a regime per le <strong>Guardie Particolari Giurate (GPG) / Addetti Vigilanza e Sicurezza Aeroportuale</strong>. Mansioni esecutive qualificate requiring certificazioni ministeriali ed ENAC.</li>
+          <li><strong>LIVELLO 6 (Parametro 156)</strong>: Inquadramento d'ingresso per le GPG (fino ad attestazione) e inquadramento a regime per gli <strong>Operatori Unici Aeroportuali (OUA) / Addetti Merci e Bagagli</strong>. Ingresso degli Addetti di Scalo.</li>
+          <li><strong>LIVELLO 7 (Parametro 140)</strong>: Lavoratori esecutivi con mansioni pratiche qualificate; livello d'attestazione intermedia per l'Operatore Unico Aeroportuale (OUA).</li>
+          <li><strong>LIVELLO 8 (Parametro 126)</strong>: Inquadramento d'ingresso per l'Operatore Unico Aeroportuale (OUA) e personale con mansioni esecutive semplici.</li>
+          <li><strong>LIVELLO 9 (Parametro 100)</strong>: Lavoratori con mansioni elementari o di pulizia e custodia non qualificata.</li>
         </ul>
 
-        <div class="notice-amber">
-          <strong>NOTA OPERATIVA SULLA PAUSA (41 ORE E MEZZA LORDE):</strong><br>
-          L'art. G8 c. 8 dispone che nei turni ad orario continuato sia prevista un'<strong>interruzione di 30 minuti per la refezione</strong>. Trattandosi per legge e contratto di pausa pasto non lavorata e non timbrata, <strong>non è considerata orario effettivo e non è retribuita</strong>. Su una turnazione articolata su 6 giorni (30 min × 6 presenze = 3 ore non pagate), la presenza fisica complessiva richiesta in sedime aeroportuale ammonta esattamente a <strong>41 ore e 30 minuti</strong> a fronte di <strong>38 ore e 30 minuti di lavoro effettivo retribuito</strong>.
+        <h3>Profili Operativi Specifici e Tempi di Attestazione (Art. G6 Note)</h3>
+
+        <div class="notice-cyan">
+          <strong>1. GUARDIA PARTICOLARE GIURATA (GPG) / VIGILANZA AEROPORTUALE (Nota 9)</strong><br>
+          • <strong>Regime Contrattuale</strong>: Inquadramento finale al <strong>Livello 5</strong>.<br>
+          • <strong>Percorso d'ingresso</strong>: Ingresso al <strong>Livello 6</strong> &rarr; Passaggio automatico al <strong>Livello 5 dopo 18 mesi</strong> di effettivo servizio.<br>
+          • <em>Apprendistato Specialistico (Allegato 2)</em>: Piano formativo previsto con sviluppo dal Livello 6 al Livello 4 nell'arco di 36 mesi per i profili ad altissima specializzazione controlli security.
         </div>
 
-        <h3>Pause, Spezzati e Deroghe Operative</h3>
-        <ul>
-          <li><strong>Turni Spezzati (Interruzione)</strong>: l'intervallo tra i due tronconi non può essere inferiore a <strong>2 ore e mezza</strong> né superiore a <strong>6 ore</strong> (minimo riducibile a 2 ore negli scali con traffico annuo inferiore a 2 milioni di passeggeri).</li>
-          <li><strong>Divieto Frazionamento Lavoro Notturno (Art. G8 c. 9)</strong>: il lavoro notturno, sia esso svolto a turni periodici che in via straordinaria, <strong>non può in alcun caso essere ripartito o spezzato</strong>.</li>
-          <li><strong>Deroghe Turnisti D.Lgs. 66/2003 (Art. G8 c. 11)</strong>: per salvaguardare la continuità del servizio essenziale h24, si deroga alle norme di legge su riposi giornalieri e pause. Se in una settimana entrambi i giorni liberi cadono fuori dalla domenica, il secondo vale a tutti gli effetti come <strong>riposo compensativo festivo</strong>.</li>
-        </ul>
+        <div class="notice-cyan">
+          <strong>2. OPERATORE UNICO AEROPORTUALE - OUA (Nota 17)</strong><br>
+          • <strong>Regime Contrattuale</strong>: Inquadramento finale al <strong>Livello 6</strong>.<br>
+          • <strong>Percorso d'ingresso</strong>: Ingresso al <strong>Livello 8</strong> &rarr; Passaggio al <strong>Livello 7 dopo 18 mesi</strong> &rarr; Passaggio definitivo al <strong>Livello 6 dopo ulteriori 30 mesi</strong>.
+        </div>
 
-        <h3>Reperibilità e Richiamo Straordinario</h3>
-        <ul>
-          <li><strong>Reperibilità (Art. G9)</strong>: preavviso minimo di <strong>48 ore</strong> per l'inserimento nella turnazione (obbligatorio salvo giustificato motivo). Importi e indennità demandati alla contrattazione aziendale.</li>
-          <li><strong>Richiamo Improvviso in Servizio (Art. G15 c. 9)</strong>: al dipendente richiamato dopo aver lasciato l'aeroporto al termine dell'orario normale spetta il pagamento di un <strong>minimo contrattuale garantito di 4 ore di straordinario</strong>, anche se la prestazione dura solo pochi minuti.</li>
-        </ul>
+        <div class="notice-cyan">
+          <strong>3. ADDETTO DI SCALO / TRAFFIC / CHECK-IN / GATE / RAMPA (Nota 8)</strong><br>
+          • <strong>Regime Contrattuale</strong>: Inquadramento finale al <strong>Livello 4</strong>.<br>
+          • <strong>Percorso d'ingresso</strong>: Ingresso al <strong>Livello 6</strong> &rarr; Passaggio al <strong>Livello 5 dopo 18 mesi</strong> &rarr; Passaggio al <strong>Livello 4 dopo ulteriori 24 mesi</strong>.<br>
+          • Passaggio al Livello 3: previo esame di idoneità, 36 mesi di permanenza al Liv. 4, diploma di scuola media superiore, conoscenza lingue straniere ed effettivo impiego polivalente su più posizioni di scalo.
+        </div>
 
-        <h3>Smart Working / Lavoro Agile (Art. G16 Bis)</h3>
+        <div class="notice-amber">
+          <strong>REVISIONE DEL SISTEMA PROFESSIONALE (Allegato 1):</strong><br>
+          Con la piena entrata in vigore della revisione delle qualifiche e dei nuovi job title (operativa dall'1/1/2026 ad opera della Commissione Paritetica), è stabilita la <strong>riduzione del 50% di tutti i tempi di attestazione sopra indicati</strong> per l'accesso ai livelli a regime.
+        </div>
+
+        <h3>Regole Legali sui Passaggi di Livello</h3>
         <ul>
-          <li>Regolato da accordi individuali e regolamenti di scalo, con obbligo inderogabile di definire le misure tecniche e organizzative a garanzia del <strong>diritto alla disconnessione</strong>.</li>
+          <li><strong>Riproprozionamento Part-Time (Art. G6 c. 5)</strong>: I periodi di permanenza ai fini del passaggio di livello sono calcolati in proporzione all'orario di lavoro svolto.</li>
+          <li><strong>Mansioni Superiori (Art. G6 c. 10)</strong>: Lo svolgimento continuativo di mansioni di livello superiore per <strong>6 mesi</strong> attribuisce il diritto definitivo all'inquadramento nel livello superiore, salvo che la sostituzione sia avvenuta per lavoratori assenti con diritto alla conservazione del posto.</li>
+          <li><strong>Precedenza Operai Diplomati (Art. G6 c. 12)</strong>: Gli operai in possesso di diploma di scuola secondaria superiore hanno diritto di precedenza per la copertura di vacanze d'organico nelle mansioni impiegatizie.</li>
+          <li><strong>Quadri (Art. G7)</strong>: Assegnati ai livelli 1S e 1, con esenzione dai limiti d'orario, garanzia di copertura assicurativa per responsabilità civile e legale connessa allo svolgimento del servizio, e diritto alla conservazione del posto in caso di procedimenti penali d'ufficio per fatti di servizio.</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 02: RETRIBUZIONE, MINIMI E UNA TANTUM -->
-    <details class="section-card" id="sec-02">
+    <!-- SEZIONE 01: ORARIO E PRESENZA (ARTT. G8, G9, G16, G16 BIS) -->
+    <details class="section-card" id="sec-01">
       <summary class="section-header">
         <div class="section-title">
-          <span class="ops-code">ARTT. G19, G20, G21, G22, G23, G28, G29, G30</span>
-          <span class="card-title">2. Stipendio Base, Tabelle, EDR, EDRN e Una Tantum</span>
+          <span class="ops-code">ARTT. G8, G9, G16, G16 BIS</span>
+          <span class="card-title">2. Orario di Lavoro, Turnazione e Flessibilità</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Composizione della Busta Paga</h3>
-        <p>Retribuzione di Fatto = <strong>Minimo Tabellare</strong> + <strong>Indennità di Contingenza</strong> + <strong>EDR / EDRN</strong> + eventuali <strong>Scatti di Anzianità</strong> e superminimi.</p>
+        <h3>Orario Normale e Articolazione (Art. G8)</h3>
+        <ul>
+          <li><strong>Orario Contrattuale Retribuito</strong>: Fissato in <strong>38 ore e 30 minuti settimanali</strong> di lavoro effettivo, distribuito di norma su 5 o 6 giorni.</li>
+          <li><strong>Pausa Refezione Turnisti (Art. G8 c. 8)</strong>: Per il personale operante su turni continuativi è prevista un'interruzione di <strong>30 minuti non retribuita</strong> per il recupero psico-fisico. La presenza fisica totale in aeroporto ammonta a <strong>41 ore e 30 minuti lordi settimanali</strong> (su 6 giorni) a fronte delle 38 ore e 30 minuti di lavoro retribuito.</li>
+          <li><strong>Flessibilità Multiriparto (Art. G8 p. II)</strong>: L'azienda può programmare l'orario settimanale in risposta ai picchi di traffico stagionale. Tetto massimo medio: <strong>48 ore settimanali</strong> nell'arco dei 12 mesi. Il saldo ore non recuperato entro l'anno deve essere liquidato nel mese successivo con la maggiorazione dello straordinario (+25% feriale, +30% feriale non lavorativo).</li>
+          <li><strong>Turni Spezzati (Art. G8 c. 5)</strong>: L'intervallo tra i due periodi di lavoro non può essere inferiore a <strong>2 ore e 30 minuti</strong> né superiore a <strong>6 ore</strong> (riducibile a 2 ore negli scali con traffico annuo inferiore a 2 milioni di passeggeri).</li>
+          <li><strong>Divieto Frazionamento Notti (Art. G8 c. 9)</strong>: Il lavoro notturno non può in alcun caso essere spezzato o ripartito in frazioni nella medesima giornata.</li>
+        </ul>
+
+        <h3>Reperibilità e Richiamo Improvviso (Art. G9, Art. G15)</h3>
+        <ul>
+          <li><strong>Programmazione Turni</strong>: La turnazione deve essere comunicata con un preavviso minimo di <strong>48 ore</strong>.</li>
+          <li><strong>Richiamo Improvviso (Art. G15 c. 9)</strong>: Al lavoratore richiamato in servizio dopo aver lasciato lo scalo al termine del turno spetta una garanzia minima retribuita pari a <strong>4 ore di straordinario</strong>, indipendentemente dalla durata della prestazione.</li>
+        </ul>
+
+        <h3>Lavoro Agile / Smart Working (Art. G16 Bis)</h3>
+        <ul>
+          <li>Regolato da accordi individuali nel rispetto delle linee guida di scalo, con definizione tassativa delle fasce di disconnessione e invariazione del trattamento retributivo.</li>
+        </ul>
+      </div>
+    </details>
+
+    <!-- SEZIONE 02: RETRIBUZIONE, MINIMI E TABELLE (ARTT. G19-G23, G28-G30) -->
+    <details class="section-card" id="sec-02">
+      <summary class="section-header">
+        <div class="section-title">
+          <span class="ops-code">ARTT. G19, G20, G21, G22, G23, G28, G29, G30</span>
+          <span class="card-title">3. Trattamento Economico, Minimi e Tabelle Retributive</span>
+        </div>
+        <div class="chevron">▼</div>
+      </summary>
+      <div class="panel-body">
+        <h3>Composizione della Retribuzione Mensile (Art. G19)</h3>
+        <p>La retribuzione mensile di fatto si compone di: Minimo Tabellare + Indennità di Contingenza + EDR/EDRN + Scatti di Anzianità + eventuali indennità fisse e superminimi.</p>
 
         <div class="notice-cyan">
           <strong>UNA TANTUM ECONOMICA (Art. G20 c. 2-3)</strong><br>
-          Erogato nel mese di <strong>luglio 2025</strong> a tutti i lavoratori a tempo indeterminato in forza al 1° luglio 2025 con attività nel periodo 01/01/2025 – 30/06/2025 un importo forfettario omnicomprensivo di <strong>500 € lordi</strong> (riproporzionato pro-quota per assunzioni nel semestre con frazioni &ge; 15 giorni e per il part-time). Escluso da ogni riflesso contrattuale, indiretto e TFR.
+          Erogato con la busta paga di <strong>Luglio 2025</strong> a tutto il personale a tempo indeterminato in forza al 1° luglio 2025 un importo lordo una tantum di <strong>500,00 €</strong> (riproporzionato per part-time e assunzioni nel semestre con frazioni &ge; 15 giorni). L'importo è escluso dal calcolo del TFR e di ogni altro istituto contrattuale.
         </div>
 
-        <h3>Tabella Minimi Contrattuali CCNL 2025-2027 (Art. G20)</h3>
-        <p>Incremento a regime di <strong>+210 € lordi al Livello 4</strong> scaglionato in 3 tranche (1° luglio 2025: +100€; 1° luglio 2026: +60€; 1° luglio 2027: +50€):</p>
+        <h3>Tabelle dei Minimi Tabellari Contrattuali CCNL 2025–2027 (Art. G20)</h3>
+        <p>Aumento a regime al Livello 4 pari a <strong>+210,00 € lordi</strong> scaglionato in 3 tranche:</p>
         <div class="table-responsive">
           <table>
             <thead>
@@ -894,7 +653,7 @@
                 <th>DAL 01/07/26</th>
                 <th>DAL 01/07/27</th>
                 <th>CONTINGENZA</th>
-                <th>EDR (12 mens.)</th>
+                <th>EDR (12m)</th>
               </tr>
             </thead>
             <tbody>
@@ -913,303 +672,188 @@
           </table>
         </div>
 
-        <h3>Disciplina EDR ed EDRN (Art. G22)</h3>
-        <ul>
-          <li><strong>EDR Tabellare</strong>: erogato per 12 mensilità a tempo indeterminato e apprendisti (utile unicamente ai fini del TFR, escluso da tutti gli altri istituti).</li>
-          <li><strong>EDRN (Art. G22 c. 3)</strong>: per il personale escluso dall'erogazione dell'EDR contrattuale spetta la voce <strong>EDRN fissa di 8,00 € lordi mensili</strong> per 12 mensilità (utile solo ai fini TFR, riproporzionata per il part-time).</li>
-        </ul>
-
         <h3>Scatti di Anzianità (Art. G23)</h3>
         <ul>
-          <li>Maturano ogni <strong>2 anni (biennio)</strong> di effettivo servizio in azienda.</li>
-          <li><strong>Tetto massimo</strong>: <strong>8 scatti biennali</strong> (l'8° scatto matura al 16° anno dal 1° gennaio 2026 per assunti dal 01/01/1993).</li>
-          <li><strong>Non assorbibilità</strong>: gli scatti non possono essere assorbiti da aumenti di merito, né i meriti dagli scatti.</li>
-          <li><strong>Valori mensili scatto</strong>: Liv 1S: 37,29 € | Liv 1: 34,45 € | Liv 2A: 32,18 € | Liv 2B: 30,47 € | Liv 3: 29,33 € | <strong>Liv 4: 27,42 €</strong> | <strong>Liv 5: 26,65 €</strong> | <strong>Liv 6: 25,31 €</strong> | Liv 7: 24,22 € | Liv 8: 22,67 €.</li>
-          <li><strong>Rivalutazione e tetti</strong>: l'importo degli scatti verrà rivalutato sulle variazioni dei minimi tabellari successive alla scadenza contrattuale. Tetto massimo: 73% del tabellare + contingenza al 1980 (88,83 €).</li>
-          <li><strong>Passaggio di livello</strong>: si conserva in cifra fissa il maturato; il riallineamento alle tariffe del nuovo livello avviene al compimento del biennio successivo.</li>
+          <li>Maturano ogni <strong>2 anni (biennio)</strong> di effettivo servizio fino a un massimo di <strong>8 scatti</strong>.</li>
+          <li><strong>Valori Mensili dello Scatto</strong>: Liv 1S: 37,29 € | Liv 1: 34,45 € | Liv 2A: 32,18 € | Liv 2B: 30,47 € | Liv 3: 29,33 € | <strong>Liv 4: 27,42 €</strong> | <strong>Liv 5: 26,65 €</strong> | <strong>Liv 6: 25,31 €</strong> | Liv 7: 24,22 € | Liv 8: 22,67 €.</li>
+          <li>Gli scatti non sono assorbibili da aumenti di merito o superminimi.</li>
         </ul>
 
-        <h3>Divisori Contrattuali e Mensilità Aggiuntive</h3>
+        <h3>Divisori Contrattuali (Art. G21) e Mensilità Aggiuntive (Artt. G29, G30)</h3>
         <ul>
-          <li><strong>Paga Giornaliera</strong>: Retribuzione mensile / <strong>26</strong>.</li>
-          <li><strong>Paga Oraria</strong>: Retribuzione mensile / <strong>173</strong>.</li>
-          <li><strong>Tredicesima (Art. G29)</strong>: erogata entro il <strong>20 dicembre</strong> (pari alla paga di fatto di dicembre).</li>
-          <li><strong>Quattordicesima (Art. G30)</strong>: corrisposta con la busta paga di <strong>giugno</strong> (periodo di maturazione 1° luglio – 30 giugno).</li>
-          <li>Frazioni di mese &ge; 15 giorni valgono mese intero per 13ª e 14ª.</li>
+          <li><strong>Quota Oraria</strong>: Retribuzione mensile di fatto / <strong>173</strong>.</li>
+          <li><strong>Quota Giornaliera</strong>: Retribuzione mensile di fatto / <strong>26</strong>.</li>
+          <li><strong>Tredicesima Mensilità (Art. G29)</strong>: Corrisposta entro il <strong>20 dicembre</strong> di ciascun anno.</li>
+          <li><strong>Quattordicesima Mensilità (Art. G30)</strong>: Corrisposta con la busta paga del mese di <strong>giugno</strong>.</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 03: INDENNITÀ E MAGGIORAZIONI -->
+    <!-- SEZIONE 03: INDENNITÀ E MAGGIORAZIONI (ARTT. G15, G24-G27, G37 TER) -->
     <details class="section-card" id="sec-03">
       <summary class="section-header">
         <div class="section-title">
           <span class="ops-code">ARTT. G15, G24, G25, G26, G27, G37 TER</span>
-          <span class="card-title">3. Indennità Operative e Maggiorazioni Turno</span>
+          <span class="card-title">4. Indennità Operative e Maggiorazioni di Turno</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Le Indennità Operative di Presenza</h3>
+        <h3>Indennità Operative di Presenza</h3>
         <ul>
           <li><strong>Indennità Giornaliera di Presenza (Art. G24)</strong>:
             <ul>
-              <li>Personale su turni avvicendati h16/h24: <strong>5,73 € al giorno</strong> (2,73 € base + 3,00 € aumento da luglio 2025).</li>
-              <li>Personale non turnista (giornaliero fisso): <strong>6,97 € al giorno</strong> (3,97 € base + 3,00 € aumento da luglio 2025).</li>
-              <li><strong>Incidenza Ferie</strong>: dal 1° luglio 2025 concorre a comporre la paga dei giorni di ferie. Non rileva per il TFR ed assorbe l'EDR storico di 6,19 €.</li>
+              <li>Personale in turni avvicendati (h16/h24): <strong>5,73 € al giorno</strong> (incrementata di +3,00 € dal 01/07/2025).</li>
+              <li>Personale non turnista (giornaliero fisso): <strong>6,97 € al giorno</strong>.</li>
+              <li>L'indennità concorre dal 1° luglio 2025 a comporre la retribuzione delle ferie ed assorbe l'EDR di 6,19 €.</li>
             </ul>
           </li>
-          <li><strong>Indennità di Turno (Art. G25)</strong>: <strong>0,26 €</strong> per ogni presenza su turni h16/h24 con orari sfalsati nelle 24h (assorbita per SEA e Ronchi dei Legionari).</li>
-          <li><strong>Indennità di Campo (Art. G26)</strong>: riconosciuta a chi lavora nel sedime:
-            <ul>
-              <li>Scalo entro 20 km dal centro città: <strong>0,21 €</strong> a presenza.</li>
-              <li>Scalo oltre 20 km dal centro città: <strong>0,26 €</strong> a presenza.</li>
-            </ul>
-          </li>
-          <li><strong>Lavaggio DPI / Divisa (Art. G37 Ter)</strong>: <strong>10,00 € lordi al mese</strong> (da luglio 2025) erogati se l'azienda non gestisce direttamente la lavanderia (nessuna incidenza su indiretti e TFR).</li>
-          <li><strong>Maneggio Denaro (Art. G27)</strong>: <strong>10%</strong> di minimo tabellare + contingenza se la mansione normale e prevalente comporta cassa o transazioni elettroniche con responsabilità contabile per errori (non frazionabile a giorno).</li>
+          <li><strong>Indennità di Turno (Art. G25)</strong>: Riconosciuti <strong>0,26 €</strong> per presenza su turni h16/h24.</li>
+          <li><strong>Indennità di Campo (Art. G26)</strong>: Scali entro 20 km dalla città: <strong>0,21 €/giorno</strong>; oltre 20 km: <strong>0,26 €/giorno</strong>.</li>
+          <li><strong>Lavaggio DPI / Divisa (Art. G37 Ter)</strong>: <strong>10,00 € lordi mensili</strong> erogati dal 1° luglio 2025 se la pulizia non è gestita direttamente dall'azienda.</li>
+          <li><strong>Maneggio Denaro (Art. G27)</strong>: Indennità pari al <strong>10%</strong> di minimo e contingenza per il personale con responsabilità di cassa continuativa.</li>
         </ul>
 
-        <h3>Tabella Maggiorazioni Straordinario, Notte e Festivi (Art. G15)</h3>
-        <p>Calcolate sulla paga oraria base (diviso 173), omnicomprensive di TFR e ratei. <strong>Non cumulabili</strong> (la maggiore assorbe la minore):</p>
+        <h3>Tabelle Maggiorazioni Straordinario e Notte (Art. G15)</h3>
+        <p>Calcolate sulla quota oraria base (diviso 173). Le maggiorazioni non sono cumulabili:</p>
         <div class="table-responsive">
           <table>
             <thead>
               <tr>
-                <th>FATTISPECIE OPERATIVA</th>
+                <th>PRESTAZIONE OPERATIVA</th>
                 <th>MAGGIORAZIONE</th>
               </tr>
             </thead>
             <tbody>
               <tr><td>Straordinario diurno feriale</td><td><strong>+25%</strong></td></tr>
               <tr><td>Straordinario diurno in giorno feriale non lavorativo</td><td><strong>+30%</strong></td></tr>
-              <tr><td>Straordinario notturno o straordinario festivo</td><td><strong>+45%</strong></td></tr>
-              <tr><td>Lavoro notturno ordinario in turni periodici (normale notte)</td><td><strong>+50%</strong></td></tr>
-              <tr><td>Lavoro notturno fuori dai regolari turni periodici</td><td><strong>+55%</strong></td></tr>
-              <tr><td>Lavoro notturno periodico in domenica o festività</td><td><strong>+55%</strong></td></tr>
-              <tr><td>Lavoro domenicale diurno ordinario a turni</td><td><strong>+10%</strong> (da 01/07/25)</td></tr>
+              <tr><td>Straordinario notturno o festivo</td><td><strong>+45%</strong></td></tr>
+              <tr><td>Lavoro notturno ordinario in turni periodici</td><td><strong>+50%</strong></td></tr>
+              <tr><td>Lavoro notturno straordinario fuori turno</td><td><strong>+55%</strong></td></tr>
+              <tr><td>Lavoro notturno periodico in festività o domenica</td><td><strong>+55%</strong></td></tr>
+              <tr><td>Lavoro domenicale diurno ordinario a turni</td><td><strong>+10%</strong> (dal 01/07/2025)</td></tr>
             </tbody>
           </table>
         </div>
         <div class="notice-cyan">
-          <strong>FASCIA NOTTURNA ECONOMICA</strong>: Ai soli fini del calcolo delle percentuali in busta paga, il lavoro notturno comprende tutte le ore svolte tra le <strong>ore 20:00 e le ore 08:00</strong>.
+          <strong>FASCIA NOTTURNA ECONOMICA (Art. G15)</strong>: Ai fini del calcolo della retribuzione, si considera lavoro notturno quello svolto tra le <strong>ore 20:00 e le ore 08:00</strong>.
         </div>
       </div>
     </details>
 
-    <!-- SEZIONE 04: FERIE E ROL -->
+    <!-- SEZIONE 04: FERIE E ROL (ARTT. G17, G18, G18 BIS) -->
     <details class="section-card" id="sec-04">
       <summary class="section-header">
         <div class="section-title">
           <span class="ops-code">ARTT. G17, G18, G18 BIS</span>
-          <span class="card-title">4. Ferie, Festività e Monte R.O.L.</span>
+          <span class="card-title">5. Ferie, Festività e Permessi ROL</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Ferie Spettanti Annuali (Art. G18)</h3>
-        <p>Maturano per anno solare in base all'anzianità aziendale (su orario a 5 giorni, coeff. 1):</p>
+        <h3>Ferie Spettanti (Art. G18)</h3>
+        <p>Maturano per anno solare in base all'anzianità aziendale (su articolazione a 5 giorni):</p>
         <ul>
           <li><strong>Fino a 1 anno di anzianità</strong>: 20 giorni lavorativi.</li>
-          <li><strong>Da oltre 1 anno a 2 anni</strong>: 21 giorni lavorativi.</li>
-          <li><strong>Da oltre 2 anni a 10 anni</strong>: 22 giorni lavorativi.</li>
+          <li><strong>Da 1 a 2 anni di anzianità</strong>: 21 giorni lavorativi.</li>
+          <li><strong>Da 2 a 10 anni di anzianità</strong>: 22 giorni lavorativi.</li>
           <li><strong>Oltre 10 anni di anzianità</strong>: 23 giorni lavorativi.</li>
         </ul>
-        <p>
-          • <strong>Orario su 6 giorni</strong>: i giorni spettanti si moltiplicano per <strong>1,2</strong>.<br>
-          • <strong>Regola dei ratei</strong>: per l'anno di assunzione o cessazione le frazioni &ge; 15 giorni valgono 1 mese intero; trascurate le frazioni inferiori a 15 giorni.<br>
-          • <strong>Recupero arretrati</strong>: le ferie non godute possono essere recuperate nei <strong>36 mesi successivi</strong> all'anno di maturazione.<br>
-          • <strong>Interruzione per malattia</strong>: la malattia certificata e comunicata tempestivamente <strong>interrompe il decorso delle ferie</strong>.<br>
-          • <strong>Richiamo in servizio</strong>: rimborso documentato delle spese di rientro in sede ed eventuale ritorno al luogo di vacanza.
-        </p>
+        <p>• Su orario a 6 giorni, i giorni spettanti vengono moltiplicati per il coefficiente <strong>1,2</strong>.<br>
+        • Le ferie arretrate devono essere fruite entro i <strong>36 mesi successivi</strong> all'anno di maturazione.</p>
 
-        <h3>Trattamento Festività e R.O.L. (Art. G17)</h3>
+        <h3>Festività e R.O.L. (Art. G17)</h3>
         <ul>
-          <li><strong>Festivo lavorato</strong>: retribuito con quota oraria normale maggiorata del <strong>+45%</strong> per le ore effettivamente svolte.</li>
-          <li><strong>Festivo coincidente con riposo/domenica</strong>: spetta <strong>1 giornata retribuita in più</strong> in busta paga (un ventiseiesimo della paga di fatto).</li>
-          <li><strong>Santo Patrono</strong>: a livello nazionale fissato il <strong>29 giugno</strong> (SS. Pietro e Paolo) in sostituzione della Madonna di Loreto (10 dicembre), salve diverse intese locali.</li>
-          <li><strong>Monte R.O.L.</strong>: <strong>4 giornate annue</strong> (anche fruibili a ore). Vanno consumate entro <strong>marzo dell'anno successivo</strong>: in caso contrario l'azienda ha l'obbligo di <strong>liquidarle per intero in denaro</strong> con la normale busta paga.</li>
-          <li><strong>Banca Ore Solidale (Art. G18 Bis)</strong>: possibilità di cedere ferie e ROL a colleghi per assistere figli con patologie gravi o percorsi di protezione contro la violenza di genere.</li>
+          <li><strong>Festività Lavorata</strong>: Retribuita con la quota oraria aumentata della maggiorazione del <strong>+45%</strong>.</li>
+          <li><strong>Festività Coincidente con Riposo/Domenica</strong>: Spetta un ventiseiesimo della retribuzione di fatto in più.</li>
+          <li><strong>Santo Patrono</strong>: Fissato d'ufficio per tutto il settore il <strong>29 giugno</strong> (SS. Pietro e Paolo).</li>
+          <li><strong>Monte R.O.L.</strong>: <strong>4 giornate annue</strong>. I permessi non goduti entro il mese di marzo dell'anno successivo devono essere interamente <strong>liquidati in denaro</strong>.</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 05: LIVELLI E CARRIERA -->
-    <details class="section-card" id="sec-05">
-      <summary class="section-header">
-        <div class="section-title">
-          <span class="ops-code">ARTT. G6, G7, ALL. 1</span>
-          <span class="card-title">5. Carriera, Livelli e Passaggi Automatici</span>
-        </div>
-        <div class="chevron">▼</div>
-      </summary>
-      <div class="panel-body">
-        <h3>Progressione Automatica (Tempi di Attestazione)</h3>
-
-        <div class="notice-cyan">
-          <strong>Guardia Particolare Giurata (GPG) / Addetto Vigilanza e Sicurezza</strong><br>
-          • <strong>Inquadramento tabellare Art. G6 (Nota 9)</strong>: Inquadramento a regime al <strong>Livello 5</strong>. Ingresso al <strong>Livello 6</strong> &rarr; passaggio automatico al <strong>Livello 5 dopo 18 mesi</strong> di effettivo servizio.<br>
-          • <em>Nota All. 2 (Progetto Formativo Apprendistato)</em>: Il piano specialistico per GPG è previsto con percorso <strong>dal Livello 6 al Livello 4</strong> (36 mesi).
-        </div>
-
-        <div class="notice-cyan">
-          <strong>Operatore Unico Aeroportuale (OUA) / Merci e Bagagli</strong><br>
-          Inquadramento a regime: <strong>Livello 6</strong> (Nota 17).<br>
-          • Ingresso al <strong>Livello 8</strong>.<br>
-          • Passaggio al <strong>Livello 7 dopo 18 mesi</strong>.<br>
-          • Passaggio definitivo al <strong>Livello 6 dopo ulteriori 30 mesi</strong>.
-        </div>
-
-        <div class="notice-cyan">
-          <strong>Addetto di Scalo (Check-in, Gate, Rampa, Lost & Found)</strong><br>
-          Inquadramento a regime: <strong>Livello 4</strong> (Nota 8).<br>
-          • Ingresso al <strong>Livello 6</strong> &rarr; al <strong>Livello 5 dopo 18 mesi</strong> &rarr; al <strong>Livello 4 dopo 24 mesi</strong>.<br>
-          • Passaggio al Livello 3: previo esame di idoneità, 36 mesi di permanenza al Liv. 4, diploma di scuola media superiore, lingue straniere ed effettivo impiego polivalente su più posizioni di scalo.
-        </div>
-
-        <div class="notice-amber">
-          <strong>ACCORDO SISTEMA PROFESSIONALE (Allegato 1):</strong><br>
-          Con l'entrata in vigore della revisione delle qualifiche e dei nuovi job title (prevista dall'1/1/2026 ad opera della Commissione paritetica), è sancita ufficialmente la <strong>riduzione del 50% di tutti i tempi di attestazione sopra indicati</strong>!
-        </div>
-
-        <h3>Regole Operative sui Passaggi di Livello</h3>
-        <ul>
-          <li><strong>Riproportionamento Part-Time (Art. G6 c. 5)</strong>: per il personale a tempo parziale, tutti i tempi di attestazione sono riproporzionati in base all'effettivo orario di lavoro.</li>
-          <li><strong>Proroga Eccezionale (Art. G6 c. 9a)</strong>: in casi assolutamente eccezionali il periodo di attestazione può essere prorogato per non oltre <strong>3 mesi</strong>.</li>
-          <li><strong>Cumulo Mansioni Multiple</strong>: per mansioni diverse svolte successivamente che danno accesso al livello superiore, il tempo totale è pari alla <strong>media dei tempi di permanenza</strong> previsti per ciascuna mansione.</li>
-          <li><strong>Mansioni Superiori (Art. G6 c. 10)</strong>: svolte con continuità per <strong>6 mesi</strong> attribuiscono definitivamente il passaggio al livello superiore (con differenziale economico immediato). <em>Eccezione</em>: il passaggio automatico non spetta se le mansioni superiori sono svolte per sostituire un dipendente assente con diritto alla conservazione del posto.</li>
-          <li><strong>Precedenza Operai Diplomati (Art. G6 c. 12)</strong>: gli operai con diploma che ne facciano richiesta scritta hanno <strong>precedenza assoluta</strong> nelle assunzioni impiegatizie rispetto a candidati esterni.</li>
-          <li><strong>Categoria Quadri (Art. G7)</strong>: Livelli 1S e 1 esclusi da vincoli di orario, passaggio alla qualifica dopo 6 mesi consecutivi, copertura legale integrale per atti di servizio e diritto di pubblicazione nominativa di ricerche/brevetti.</li>
-        </ul>
-      </div>
-    </details>
-
-    <!-- SEZIONE 06: MALATTIA E INFORTUNI -->
+    <!-- SEZIONE 06: MALATTIA E INFORTUNI (ARTT. G34, G36, G37) -->
     <details class="section-card" id="sec-06">
       <summary class="section-header">
         <div class="section-title">
           <span class="ops-code">ARTT. G34, G36, G37</span>
-          <span class="card-title">6. Malattia, Infortuni, Tutela Comporto e Polizze</span>
+          <span class="card-title">6. Malattia, Infortuni e Tutela del Comporto</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Obblighi di Comunicazione e Fasce INPS</h3>
+        <h3>Obblighi del Dipendente e Fasce INPS</h3>
         <ul>
-          <li><strong>Comunicazione</strong>: immediata e <strong>prima dell'inizio del turno</strong> del primo giorno di assenza (anche per eventuale prosecuzione). Comunicare subito il numero PUC del certificato telematico (entro 2 giorni il cartaceo se eccezionalmente rilasciato dal medico). Inosservanza = assenza ingiustificata.</li>
-          <li><strong>Variazione Domicilio</strong>: obbligo di comunicare tempestivamente all'azienda qualsiasi cambio di indirizzo durante la malattia.</li>
-          <li><strong>Fasce Reperibilità Visite Fiscali</strong>: <strong>10:00 – 12:00</strong> e <strong>17:00 – 19:00</strong> (7 giorni su 7, compresi sabati, domeniche e festivi). L'assenza ingiustificata comporta la perdita del trattamento economico e sanzione disciplinare.</li>
+          <li><strong>Comunicazione Assenza</strong>: Il dipendente deve avvisare l'azienda <strong>prima dell'inizio del proprio turno</strong> del primo giorno di malattia fornendo il numero PUC del certificato telematico.</li>
+          <li><strong>Fasce Reperibilità Visite Fiscali</strong>: Dalle <strong>10:00 alle 12:00</strong> e dalle <strong>17:00 alle 19:00</strong> (tutti i giorni, compresi sabati e festivi).</li>
         </ul>
 
         <h3>Periodo di Comporto e Trattamento Economico (Art. G34)</h3>
         <ul>
-          <li><strong>Conservazione del Posto</strong>: <strong>12 mesi in un triennio mobile</strong>.</li>
-          <li><strong>Trattamento Retributivo</strong>:
-            <ul>
-              <li>Primi 6 mesi: <strong>100%</strong> della retribuzione mensile di fatto.</li>
-              <li>Successivi 6 mesi: <strong>50%</strong> della retribuzione.</li>
-            </ul>
-          </li>
-          <li><strong>Giorni Salvi Esclusi dal Comporto</strong>:
-            <ul>
-              <li>Tutti i giorni di <strong>ricovero ospedaliero sono esclusi sia dal comporto che dalle decurtazioni retributive</strong>.</li>
-              <li>La <strong>convalescenza continuativa post-ricovero</strong> certificata dal medico di base (fino a un massimo di <strong>120 giorni</strong>) <strong>non si calcola nel comporto</strong> ed è retribuita al 100%.</li>
-            </ul>
-          </li>
-        </ul>
-
-        <h3>Patologie Gravi, Disabilità e Infortuni</h3>
-        <ul>
-          <li><strong>Oncologiche, Sclerosi Multipla, Distrofie Muscolari</strong>: limiti di comporto e stipendio <strong>triplicati</strong> (fino a 36 mesi tutelati). Al termine, su richiesta, concessione di ulteriori <strong>12 mesi di aspettativa non retribuita</strong> con congelamento dei termini di recesso.</li>
-          <li><strong>Disabilità Certificata</strong>: comporto aumentato del <strong>30%</strong> (previa attestazione al medico competente per la valutazione di accomodamenti ragionevoli sostenibili).</li>
-          <li><strong>Infortunio sul Lavoro e Malattie Professionali (Art. G37)</strong>: retribuzione mensile di fatto e posto garantiti al <strong>100%</strong> per tutto il periodo di inabilità riconosciuto dall'INAIL (compreso infortunio in itinere), con anticipazione datoriale in busta paga.</li>
-          <li><strong>Assicurazione Infortuni Esclusi INAIL (Art. G36)</strong>: obbligo per l'azienda di stipulare polizze assicurative a favore dei dipendenti non tutelati dall'INAIL, con massimali almeno pari a quelli di legge.</li>
+          <li><strong>Conservazione del Posto</strong>: Tetto di <strong>12 mesi in un triennio mobile</strong>.</li>
+          <li><strong>Retribuzione Spettante</strong>: 100% della retribuzione per i primi 6 mesi; 50% per i successivi 6 mesi.</li>
+          <li><strong>Esclusioni dal Comporto</strong>: I periodi di <strong>ricovero ospedaliero e la convalescenza post-ricovero</strong> (fino a 120 giorni) sono esclusi dal computo del comporto e retribuiti al 100%.</li>
+          <li><strong>Patologie Gravi (Oncologiche, Sclerosi Multipla)</strong>: I termini di comporto e il trattamento retributivo sono <strong>triplicati</strong> (fino a 36 mesi).</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 07: SANZIONI E TELECAMERE -->
+    <!-- SEZIONE 07: DISCIPLINARE E TELECAMERE (ARTT. G38 BIS, G39, G40) -->
     <details class="section-card" id="sec-07">
       <summary class="section-header">
         <div class="section-title">
           <span class="ops-code">ARTT. G38 BIS, G39, G40</span>
-          <span class="card-title">7. Doveri, Provvedimenti Disciplinari e Telecamere</span>
+          <span class="card-title">7. Sanzioni Disciplinari e Impianti TVCC</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Procedura di Garanzia (Art. 7 Statuto Lavoratori)</h3>
-        <ol>
-          <li><strong>Contestazione Scritta</strong>: tempestiva e circostanziata con descrizione puntuale dei fatti addebitati.</li>
-          <li><strong>5 Giorni di Termine a Difesa</strong>: il dipendente ha <strong>5 giorni di calendario</strong> dalla notifica per presentare difese scritte o chiedere audizione orale con assistenza sindacale. Se le giustificazioni sono accolte, il procedimento decade senza conseguenze.</li>
-          <li><strong>Termine Perentorio di Applicazione</strong>: la sanzione, una volta comminata, deve essere applicata entro <strong>60 giorni</strong> dall'esaurimento delle procedure e dell'eventuale arbitrato.</li>
-          <li><strong>Prescrizione Recidiva</strong>: qualsiasi provvedimento applicato <strong>si cancella definitivamente dopo 2 anni</strong>.</li>
-        </ol>
-
-        <h3>Gradualità delle Sanzioni (Art. G40)</h3>
+        <h3>Procedura Disciplinare (Art. G39)</h3>
         <ul>
-          <li><strong>Richiamo verbale / scritto</strong>: lievi irregolarità di orario, mancata osservanza di istruzioni minori, collette o vendita biglietti sul posto di lavoro non autorizzate.</li>
-          <li><strong>Multa (fino a 4 ore di retribuzione)</strong>: mancato uso dei DPI forniti, uso personale di smartphone/tablet in servizio, mancata visita medica periodica o mancata formazione, lievi danni colposi a macchinari senza fermo operativo, reclami formali scritti da passeggeri o vettori.</li>
-          <li><strong>Sospensione (da 1 a 10 giorni)</strong>: assenza ingiustificata, irreperibilità a visita domiciliare INPS, stato di ebbrezza o alterazione in servizio, pubblicazione social di contenuti lesivi dell'immagine aziendale, violazioni gravi di security/safety, uso scorretto di dotazioni informatiche.</li>
-          <li><strong>Licenziamento con Preavviso</strong>: assenza ingiustificata per oltre 4 giorni consecutivi, fumo in aree a rischio o divieto, alcolici/droghe in servizio, recidiva (2 sospensioni nei 24 mesi), grave insubordinazione con danno potenziale.</li>
-          <li><strong>Licenziamento Senza Preavviso (In Tronco)</strong>: furto, manomissione o sottrazione di merci/bagagli, accesso abusivo in airside o su aeromobili, timbratura cartellino per altri, traffico illecito, molestie sessuali o violenza fisica/morale, abbandono del posto di lavoro, presentazione di certificati falsi. Ammessa la sospensione cautelare non disciplinare in pendenza di accertamento.</li>
+          <li><strong>Contestazione Scritta</strong>: Deve essere tempestiva e specifica.</li>
+          <li><strong>Difesa</strong>: Il lavoratore ha <strong>5 giorni di calendario</strong> per presentare le proprie giustificazioni o richiedere un'audizione assistito dal sindacato.</li>
+          <li><strong>Applicazione Sanzione</strong>: Entro il termine perentorio di <strong>60 giorni</strong>.</li>
+          <li><strong>Prescrizione Recidiva</strong>: Tutte le sanzioni si cancellano trascorsi <strong>2 anni</strong>.</li>
         </ul>
 
         <div class="notice-red">
-          <strong>IMPIANTI TVCC E NUOVE TECNOLOGIE (Art. G38 Bis):</strong><br>
-          Le telecamere e i sistemi di videosorveglianza non possono in alcun caso essere impiegati per il controllo a distanza della prestazione o della produttività. I dati e i filmati <strong>non possono essere utilizzati a fini disciplinari</strong>, fatti salvi i soli casi di reati penali, dolo o colpa grave a danno dell'incolumità o del patrimonio aziendale. Vietata la cessione di dati a terzi.
+          <strong>IMPIANTI DI VIDEOSORVEGLIANZA E TVCC (Art. G38 Bis):</strong><br>
+          Le telecamere di scalo non possono essere utilizzate per il controllo a distanza dell'attività lavorativa. I filmati e i dati registrati <strong>non possono essere usati a fini disciplinari</strong>, salvo il verificarsi di reati penali o dolo provato.
         </div>
       </div>
     </details>
 
-    <!-- SEZIONE 08: MERCATO DEL LAVORO, PROVA E PART-TIME -->
+    <!-- SEZIONE 08: CONTRATTI E PART-TIME (ARTT. G4, G5, G10-G13 BIS, G38) -->
     <details class="section-card" id="sec-08">
       <summary class="section-header">
         <div class="section-title">
-          <span class="ops-code">ARTT. G4, G4 BIS, G5, G10, G11, G12, G13, G13 BIS, G38</span>
-          <span class="card-title">8. Mercato del Lavoro, Appalti, Termine, Part-Time e Preavvisi</span>
+          <span class="ops-code">ARTT. G4, G5, G10, G11, G12, G13, G13 BIS, G38</span>
+          <span class="card-title">8. Part-Time, Termine, Clausola Sociale e Preavviso</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Tetti Complessivi e Clausola Appalti</h3>
+        <h3>Part-Time (Art. G11)</h3>
         <ul>
-          <li><strong>Tetto Plurimo Mercato del Lavoro (Art. G10)</strong>: l'utilizzo contemporaneo di contratti a termine e somministrazione non può superare il <strong>30%</strong> della forza lavoro a tempo indeterminato (durata max 36 mesi con informativa annuale).</li>
-          <li><strong>Appalti e Tutela Anti-Dumping (Art. G4 Bis)</strong>: rispetto delle tutele minime contrattuali e informative sindacali preventive sopra soglia UE e tempestive sotto soglia ad alta intensità di manodopera.</li>
+          <li><strong>Limiti Orari</strong>: Part-time orizzontale non inferiore a 20 ore e non superiore a 30 ore settimanali.</li>
+          <li><strong>Lavoro Supplementare</strong>: Maggiorato del <strong>+15%</strong> fino al 50% dell'orario individuale, e del <strong>+20%</strong> oltre tale limite.</li>
+          <li><strong>Inviolabilità</strong>: Il rifiuto del dipendente di trasformare il rapporto da full-time a part-time o viceversa non costituisce mai motivo di licenziamento.</li>
         </ul>
 
-        <h3>Periodo di Prova (Art. G5)</h3>
+        <h3>Clausola Sociale in Caso di Cambio Gestore/Appalto (Art. G4)</h3>
         <ul>
-          <li>Livelli 1S e 1: <strong>6 mesi</strong>. Livelli dal 2A al 6: <strong>3 mesi</strong>. Livelli 7, 8 e 9: <strong>2 mesi</strong>.</li>
-          <li>Malattia oltre 5 giorni e infortunio sospendono la prova. In caso di licenziamento datoriale in prova, la retribuzione spetta fino alla metà (giorno 15) o a fine mese a seconda della quindicina di recesso.</li>
+          <li>Garantisce l'assunzione del personale uscente senza periodo di prova e con la conservazione dell'anzianità maturata. Selezione effettuata su graduatorie per tre fasce d'età con sorteggio accoppiato.</li>
         </ul>
 
-        <h3>Disciplina Part-Time (Art. G11)</h3>
+        <h3>Termini di Preavviso (Art. G38)</h3>
         <ul>
-          <li><strong>Limiti orari</strong>: orizzontale 20-30 ore/settimana (min 4 ore/giorno); verticale 100-200 giorni/anno; misto 660-1.200 ore/anno. Tetto massimo del <strong>50%</strong> dell'organico full-time (esclusi part-time volontari).</li>
-          <li><strong>Tutela del posto</strong>: il rifiuto del lavoratore di trasformare il rapporto da full a part-time o viceversa <strong>non costituisce mai motivo di licenziamento</strong>.</li>
-          <li><strong>Passaggio temporaneo da full a part-time</strong>: richiedibile fino a <strong>3 volte</strong> per periodi concordati da 6 a 24 mesi (riducibili di un terzo per scali con meno di 2 mln pax). Diritto di precedenza per il consolidamento a full-time trascorsi 18 o 36 mesi.</li>
-          <li><strong>Lavoro supplementare</strong>: compensato al <strong>+15%</strong> fino al 50% dell'orario individuale, e al <strong>+20%</strong> oltre tale soglia fino al limite full-time (onnicomprensivo di ratei e TFR). Oltre il normale orario full-time si applicano le percentuali di straordinario.</li>
-          <li><strong>Clausole elastiche</strong>: variazione di turno con 48 ore di preavviso e indennità di <strong>0,52 €/giorno</strong> (fuori TFR). Facoltà del dipendente di revocare il consenso decorsi almeno 5 mesi con 45 giorni di preavviso per comprovati motivi personali/familiari. Mensa/buono pasto spettante con turni di almeno 6 ore.</li>
-        </ul>
-
-        <h3>Stagionalità e Tempo Determinato</h3>
-        <ul>
-          <li><strong>Contratti a Termine Ordinari (Art. G13)</strong>: tetto massimo del <strong>20%</strong> della forza a tempo indeterminato su base regionale. Ammessi rinnovi/proroghe per: picchi temporanei, riorganizzazioni, formazione/addestramento, gestione collettiva ferie, progetti di transizione digitale e AI.</li>
-          <li><strong>Stagionalità Aeroportuale (Art. G13 Bis)</strong>: ammessa per <strong>7 mesi tra aprile e ottobre</strong> (più 2 mesi distribuiti). Esclusa dal tetto legale dei 24/36 mesi. Tetti: max 35% per tempo determinato, max 30% per somministrazione, max 25% in caso di ricorso combinato.</li>
-          <li><strong>Riconoscimento Anzianità (Art. G12)</strong>: in caso di assunzione a tempo indeterminato dopo periodi a termine o somministrazione sulle stesse mansioni, i mesi svolti valgono al <strong>50% ai fini del passaggio di livello</strong> (se non sono decorsi più di 12 mesi).</li>
-        </ul>
-
-        <h3>Clausola Sociale e Preavvisi di Licenziamento/Dimissioni</h3>
-        <ul>
-          <li><strong>Clausola Sociale Cambio Gestore (Art. G4)</strong>: passaggio del personale senza prova e con conservazione dell'anzianità maturata. Selezione proporzionata su graduatorie per 3 fasce anagrafiche (&le;35 anni, 35-50 anni, &gt;50 anni) estraendo coppie tra il primo e l'ultimo della lista.</li>
-          <li><strong>Preavviso Licenziamento (Art. G38)</strong>: 20 giorni per anno di anzianità (minimo 2 mesi, max 8 per liv. 1S-2B; minimo 1 mese, max 7 per gli altri). Durante il preavviso concessi permessi orari per ricerca lavoro. In caso di decesso del dipendente, l'indennità spetta agli eredi (art. 2122 c.c.).</li>
-          <li><strong>Preavviso Dimissioni</strong>: i termini a carico del dipendente <strong>sono ridotti esattamente alla metà</strong>. Decorrenza dal 15 o a fine mese.</li>
+          <li><strong>Licenziamento</strong>: 20 giorni per ogni anno di anzianità (minimo 1 o 2 mesi a seconda del livello).</li>
+          <li><strong>Dimissioni Volontarie</strong>: I termini a carico del dipendente sono esattamente **ridotti alla metà**.</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 09: APPRENDISTATO E FORMAZIONE SPECIALISTICA -->
+    <!-- SEZIONE 09: APPRENDISTATO (ART. G14, ALL. 2) -->
     <details class="section-card" id="sec-09">
       <summary class="section-header">
         <div class="section-title">
@@ -1219,25 +863,16 @@
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Regolamentazione Generale Apprendistato (Art. G14)</h3>
-        <ul>
-          <li><strong>Forma scritta</strong> obbligatoria; periodo di prova massimo di <strong>2 mesi di effettiva presenza</strong>. Divieto di retribuzione a cottimo.</li>
-          <li><strong>Durata</strong>: minima 6 mesi, massima 36 mesi (48 mesi per diploma quadriennale regionale).</li>
-          <li><strong>Comporto Malattia</strong>: <strong>180 giorni complessivi</strong> con retribuzione a carico azienda al <strong>66%</strong>. Infortunio sul lavoro integrato al <strong>100%</strong> sin dal 1° giorno. Possibilità di differire il termine formativo per assenze superiori a 30 giorni.</li>
-          <li><strong>Clausola di Stabilizzazione</strong>: per aziende con almeno 50 dipendenti, la stipula è subordinata alla conferma a tempo indeterminato di almeno il <strong>20%</strong> degli apprendisti giunti a scadenza nei 24 mesi precedenti.</li>
-          <li><strong>Recesso al termine</strong>: preavviso di 15 giorni; in assenza di disdetta il rapporto prosegue a tempo indeterminato e il 50% della durata dell'apprendistato è utile ai fini degli scatti di anzianità.</li>
-        </ul>
-
-        <h3>Trattamento Retributivo Progressivo</h3>
-        <p>Percentuali applicate su minimo tabellare e indennità di contingenza:</p>
+        <h3>Retribuzione Progressiva Apprendisti (Art. G14)</h3>
+        <p>Percentuale calcolata su minimo tabellare e contingenza del livello finale:</p>
         <div class="table-responsive">
           <table>
             <thead>
               <tr>
                 <th>SEMESTRE</th>
-                <th>CONTRATTI FINO A 18 MESI</th>
-                <th>CONTRATTI FINO A 24 MESI</th>
-                <th>CONTRATTI FINO A 36 MESI</th>
+                <th>CONTRATTI 18 MESI</th>
+                <th>CONTRATTI 24 MESI</th>
+                <th>CONTRATTI 36 MESI</th>
               </tr>
             </thead>
             <tbody>
@@ -1250,89 +885,68 @@
             </tbody>
           </table>
         </div>
-
-        <h3>Profili Formativi di Settore (Allegato 2)</h3>
-        <ul>
-          <li><strong>Monte ore</strong>: formazione professionalizzante non inferiore a <strong>80 ore medie annue</strong> + 40 ore di formazione trasversale su sicurezza, disciplina e supporti informatici.</li>
-          <li><strong>Guardia Particolare Giurata (GPG)</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208 ore specialistiche (tecnologie controllo security, certificazioni ENAC, dangerous goods, viabilità airside, safety).</li>
-          <li><strong>Operatore Unico Aeroportuale (OUA)</strong>: percorso da Liv. 8 a Liv. 6 (36 mesi) con 160 ore specialistiche (piano carico aa/mm, smistamento sottobordo, GPU/ASU/scale semoventi).</li>
-          <li><strong>Agente di Rampa / Check-in</strong>: percorso da Liv. 6 a Liv. 4 (36 mesi) con 208-240 ore specialistiche (DCS, centraggio velivoli, pilot check, de-icing, assistenza passeggeri).</li>
-          <li><strong>Manutenzione Mezzi e Impianti</strong>: da Liv. 7 a Liv. 5 (36 mesi, 200 ore specialistiche su schemi tecnici, oleodinamica, meccatronica, prevenzione guasti).</li>
-        </ul>
+        <p>• <strong>Formazione Obbligatoria</strong>: Almeno 80 ore medie annue di formazione specialistica + 40 ore trasversali.</p>
       </div>
     </details>
 
-    <!-- SEZIONE 10: WELFARE, FONDI E CONCILIAZIONE -->
+    <!-- SEZIONE 10: PREVAER E WELFARE (ARTT. G41-G44) -->
     <details class="section-card" id="sec-10">
       <summary class="section-header">
         <div class="section-title">
           <span class="ops-code">ARTT. G1, G2, G2 BIS, G41, G42, G43, G44</span>
-          <span class="card-title">10. Fondo PREVAER, Sanità, Genitorialità e Welfare</span>
+          <span class="card-title">10. Fondo PREVAER, Sanità Integrativa e Maternità</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
-        <h3>Fondo Pensione Complementare PREVAER (Art. G42)</h3>
+        <h3>Fondo PREVAER (Art. G42)</h3>
         <ul>
-          <li>Aderendo con il versamento del contributo dipendente dell'<strong>1%</strong> (su minimo, contingenza e scatti), l'azienda versa obbligatoriamente a suo carico:
+          <li>Aderendo con il contributo dell'1% a carico del lavoratore, l'azienda versa obbligatoriamente:
             <ul>
               <li><strong>2,5%</strong> fino al 31/12/2025.</li>
-              <li><strong>3,0% dal 1° gennaio 2026</strong>.</li>
+              <li><strong>3,0% dal 1° Gennaio 2026</strong>.</li>
             </ul>
           </li>
-          <li>Per il personale a termine l'iscrizione e i contributi decorrono dal superamento della prova.</li>
         </ul>
 
         <h3>Assistenza Sanitaria Integrativa (Art. G43)</h3>
         <ul>
-          <li>A decorrere dal <strong>1° gennaio 2026</strong> contributo minimo aziendale di <strong>240,00 € annui a dipendente</strong> a tempo indeterminato (fatti salvi trattamenti aziendali migliorativi).</li>
-          <li>Possibilità di estensione facoltativa della copertura a familiari a carico o pacchetti aggiuntivi a carico del dipendente.</li>
+          <li>Dal <strong>1° Gennaio 2026</strong> contributo obbligatorio interamente a carico azienda pari a <strong>240,00 € annui</strong> per ciascun dipendente a tempo indeterminato.</li>
         </ul>
 
-        <h3>Maternità, Congedi e Conciliazione Vita-Lavoro (Artt. G2, G2 Bis, G44)</h3>
+        <h3>Maternità e Violenza di Genere (Artt. G2, G2 Bis)</h3>
         <ul>
-          <li><strong>Maternità Obbligatoria</strong>: integrazione al <strong>100% della retribuzione mensile di fatto</strong> + versamento integrale dei contributi aziendali al fondo <strong>Prevaer</strong>. Riconosciuto il congedo di paternità obbligatorio di legge.</li>
-          <li><strong>Congedi Parentali</strong>: preavviso di 12 giorni per fruizione giornaliera; 5 giorni per fruizione oraria (minimo 1 ora a inizio o fine turno, non frazionabile sotto l'equivalente di una giornata nel periodo).</li>
-          <li><strong>Donne Vittime di Violenza (Art. G2 Bis)</strong>: riconosciuti <strong>ulteriori 3 mesi di aspettativa retribuita al 100%</strong> oltre ai 3 mesi di legge (con preavviso di 5 giorni) e diritto alla trasformazione a part-time.</li>
-          <li><strong>Premio di Risultato (PDR) ed EGR (Art. G1)</strong>: premio triennale variabile; nelle aziende prive di contrattazione integrativa spetta un <strong>EGR di 250,00 € all'anno</strong> erogato nel secondo semestre. Tregua sindacale vincolante di 3 mesi durante le trattative di rinnovo aziendale.</li>
+          <li><strong>Maternità Obbligatoria</strong>: Integrazione datoriale al <strong>100% della retribuzione mensile</strong> e versamento integrale dei contributi PREVAER.</li>
+          <li><strong>Donne Vittime di Violenza</strong>: Diritto a <strong>3 mesi aggiuntivi di congedo retribuito al 100%</strong> a carico azienda.</li>
         </ul>
       </div>
     </details>
 
-    <!-- SEZIONE 11: TRASFERTE, SICUREZZA, INTERNALIZZAZIONI E CHIUSURA -->
+    <!-- SEZIONE 11: TRASFERTE E ALLEGATI (ARTT. G31-G33, G45-G48, ALL. 3) -->
     <details class="section-card" id="sec-11">
       <summary class="section-header">
         <div class="section-title">
-          <span class="ops-code">ARTT. G2 TER, G3, G31, G32, G33, G35, G37 BIS, G45-G48, ALL. 3</span>
-          <span class="card-title">11. Trasferte, Sicurezza, Internalizzazioni e Validità</span>
+          <span class="ops-code">ARTT. G31, G32, G33, G45-G48, ALLEGATO 3</span>
+          <span class="card-title">11. Trasferte, Internalizzazioni e Validità Contrattuale</span>
         </div>
         <div class="chevron">▼</div>
       </summary>
       <div class="panel-body">
         <h3>Missioni e Trasferte (Art. G31)</h3>
         <ul>
-          <li><strong>Rimborsi pasti</strong>: dovuti per partenze/rientri oltre le ore 08:00 (colazione), 13:00 (pranzo), 20:00 (cena). Pernottamento per rientri oltre le ore 24:00. Anticipo spese garantito pari ad almeno il <strong>50%</strong>.</li>
-          <li><strong>Rimborsi forfettari spese minute</strong>: <strong>10% del costo biglietto</strong> per viaggi in treno; <strong>5% del costo biglietto</strong> per viaggi aerei.</li>
-          <li><strong>Indennità tempo di viaggio fuori orario</strong>: <strong>10% della quota oraria</strong> (minimo + contingenza) per ciascuna ora di viaggio effettivo.</li>
-        </ul>
-
-        <h3>Prevenzione Aggressioni, RLS e Sicurezza (Artt. G2 Ter, G3, G37 Bis)</h3>
-        <ul>
-          <li>Protocolli con gestore, ENAC e Polizia per proteggere il personale di front-line con barriere fisiche, formazione, supporti tecnologici e aggiornamento continuo del DVR. Rinvio alle agibilità sindacali degli RLS ex art. 12 Parte Generale.</li>
+          <li><strong>Rimborsi Spese Minute</strong>: 10% del costo del biglietto ferroviario; 5% per viaggi aerei.</li>
+          <li><strong>Tempo di Viaggio Fuori Orario</strong>: Compensato con un'indennità pari al <strong>10% della quota oraria</strong> base.</li>
         </ul>
 
         <div class="notice-amber">
           <strong>ACCORDO DI CONFLUENZA ED INTERNALIZZAZIONI (Allegato 3):</strong><br>
-          In caso di internalizzazione di servizi aeroportuali precedentemente affidati in appalto a terzi o di nuova adesione al CCNL, per consentire un riallineamento graduale, i minimi tabellari (Art. G20) e le maggiorazioni (Art. G15) sono applicati in misura progressiva nei primi 4 anni:
-          <strong>80% (1° anno) &rarr; 85% (2° anno) &rarr; 90% (3° anno) &rarr; 95% (4° anno)</strong>, facendo salvo il trattamento di partenza se più favorevole. Dal 5° anno scatta l'applicazione integrale del CCNL.
+          In caso di internalizzazione di servizi in appalto, i minimi tabellari (Art. G20) e le maggiorazioni (Art. G15) si applicano progressivamente nei primi 4 anni:
+          <strong>80% (1° anno) &rarr; 85% (2° anno) &rarr; 90% (3° anno) &rarr; 95% (4° anno)</strong>. Dal 5° anno scatta l'applicazione integrale.
         </div>
 
-        <h3>Mobilità Interna e Norme Finali</h3>
+        <h3>Durata e Vigenza (Art. G48)</h3>
         <ul>
-          <li><strong>Trasferimento Sede (Art. G32)</strong>: rimborso spese trasloco e indennità di <strong>10 quote giornaliere</strong> per il dipendente + 5 per ciascun familiare a carico (anticipo fino al 50%).</li>
-          <li><strong>Mobilità Orizzontale (Art. G33)</strong>: consentita temporaneamente per attività omogenee a parità di livello; confronto sindacale preventivo entro 5 giorni per spostamenti collettivi definitivi.</li>
-          <li><strong>Aspettativa e Sindacato</strong>: aspettativa non retribuita (Art. G35) non computabile nell'anzianità. Contributo sindacale all'<strong>1% su paga base e contingenza per 14 mensilità</strong> (Art. G46). Permessi RSU con preavviso di 24 ore (Art. G3).</li>
-          <li><strong>Inscindibilità e Durata (Artt. G47, G48)</strong>: contratto inscindibile. Vigenza dal 1° gennaio 2025 al <strong>31 dicembre 2027</strong>; proroga tacita e ultra-attività a tempo indeterminato in assenza di disdetta con preavviso di almeno 6 mesi.</li>
+          <li>Il contratto decorre dal 1° gennaio 2025 e scade il <strong>31 dicembre 2027</strong>.</li>
         </ul>
       </div>
     </details>
@@ -1447,7 +1061,7 @@
   <!-- SCRIPT DINAMICA SCROLL AUTO-HIDE & OPERAZIONI PWA -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      // GESTIONE AUTO-HIDE HEADER SU SCROLL (COMPATIBILE IOS/ANDROID)
+      // AUTO-HIDE HEADER SU SCROLL
       const header = document.getElementById('mainAppHeader');
       const searchInput = document.getElementById('opsSearchInput');
       let lastScrollY = window.pageYOffset || document.documentElement.scrollTop;
@@ -1458,22 +1072,18 @@
           window.requestAnimationFrame(() => {
             const currentScrollY = window.pageYOffset || document.documentElement.scrollTop;
 
-            // Non nascondere se la tastiera è aperta o l'input ha il focus
             if (document.activeElement === searchInput) {
               lastScrollY = currentScrollY;
               ticking = false;
               return;
             }
 
-            // Scroll verso il basso oltre i 60px -> nascondi header
             if (currentScrollY > lastScrollY && currentScrollY > 60) {
               header.classList.add('header-hidden');
             } else if (currentScrollY < lastScrollY) {
-              // Scroll verso l'alto -> mostra header
               header.classList.remove('header-hidden');
             }
 
-            // Sempre visibile se in cima alla pagina
             if (currentScrollY <= 10) {
               header.classList.remove('header-hidden');
             }
@@ -1623,26 +1233,6 @@
         header.classList.remove('header-hidden');
       });
 
-      // KEYBOARD SHORTCUTS
-      window.addEventListener('keydown', (e) => {
-        if (e.key === '/' && document.activeElement !== searchInput && document.getElementById('authModalOverlay').style.display !== 'flex') {
-          e.preventDefault();
-          header.classList.remove('header-hidden');
-          searchInput.focus();
-          searchInput.select();
-        } else if (e.key === 'Escape') {
-          if (document.getElementById('authModalOverlay').style.display === 'flex') {
-            closeAuthModal();
-          } else if (document.getElementById('calcModalOverlay').style.display === 'flex') {
-            document.getElementById('calcModalOverlay').style.display = 'none';
-          } else if (document.activeElement === searchInput) {
-            searchInput.value = '';
-            performSearch();
-            searchInput.blur();
-          }
-        }
-      });
-
       // 5. AUTENTICAZIONE RADAR & CALCOLATORE RAPIDO
       const headerTitle = document.getElementById('opsHeaderTitle');
       const authModalOverlay = document.getElementById('authModalOverlay');
@@ -1680,9 +1270,6 @@
           calculateAll();
         } else {
           authErrorMsg.textContent = 'ERRORE: CHIAVE DI SICUREZZA NON VALIDA';
-          authModalBox.classList.remove('shake');
-          void authModalBox.offsetWidth;
-          authModalBox.classList.add('shake');
           authPasswordInput.select();
         }
       }
@@ -1714,20 +1301,8 @@
         }
       });
 
-      authModalOverlay.addEventListener('click', (e) => {
-        if (e.target === authModalOverlay) {
-          closeAuthModal();
-        }
-      });
-
       closeCalcModal.addEventListener('click', () => {
         calcModalOverlay.style.display = 'none';
-      });
-
-      calcModalOverlay.addEventListener('click', (e) => {
-        if (e.target === calcModalOverlay) {
-          calcModalOverlay.style.display = 'none';
-        }
       });
 
       // TABELLE PER IL CALCOLO RETRIBUTIVO
@@ -1780,7 +1355,7 @@
       calcPeriodSelect.addEventListener('change', calculateAll);
       calcScattiSelect.addEventListener('change', calculateAll);
 
-      // 6. SERVICE WORKER FISICO (CRITERIO UFFICIALE PWA)
+      // 6. SERVICE WORKER PWA
       if ('serviceWorker' in navigator && window.location.protocol.startsWith('http')) {
         navigator.serviceWorker.register('./sw.js', { scope: './' })
           .catch(err => console.error('SW Error:', err));
